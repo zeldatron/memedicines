@@ -66,7 +66,7 @@ body {
 hr {
   width: 20%;
   height: 2px;
-  background: #7BB644;
+  background: #2F2D30;
   margin: 4% auto; }
 
 /* grid styles */
@@ -87,11 +87,11 @@ hr {
       border-radius: 2px;
     }*/ }
   .component h2 {
-    color: #7BB644; }
+    color: #2F2D30; }
   .component pre {
     overflow-x: auto;
     padding: 1.25em;
-    border: 1px solid #F7F6F4;
+    border: 1px solid #57BA95;
     border-left-width: 5px;
     margin: 1.6em 0;
     font-size: 0.875em;
@@ -100,7 +100,7 @@ hr {
     word-wrap: normal;
     color: white; }
   .component code {
-    color: #F7F6F4; }
+    color: #57BA95; }
   .component .layout {
     display: flex;
     min-height: 100vh;
@@ -138,7 +138,7 @@ hr {
     border: 1px solid transparent;
     user-select: none; }
   .component .menu-button:hover {
-    border: 1px solid #F7F6F4;
+    border: 1px solid #57BA95;
     border-radius: 2px; }
   .component .menu-button:active {
     background: #EEE;
@@ -181,14 +181,14 @@ hr {
     height: 3rem;
     line-height: 3rem;
     font-size: 1rem;
-    color: #F7F6F4;
+    color: #57BA95;
     background: transparent;
     transition: all .2s ease-in; }
   .component .menu-link {
     box-sizing: border-box;
     padding-left: 3rem;
     display: block;
-    color: #F7F6F4;
+    color: #57BA95;
     transition: color 0.2s ease-in; }
   .component .menu-link:hover {
     border-bottom: none; }
@@ -204,20 +204,20 @@ hr {
     box-sizing: border-box;
     min-height: 1rem;
     margin-bottom: 0;
-    background: #F7F6F4;
+    background: #57BA95;
     border: 1px solid #FFF;
     border-radius: 2px;
     overflow: hidden;
     text-align: center;
-    color: #7BB644; }
+    color: #2F2D30; }
   .component .box-row {
     margin-bottom: 1rem; }
   .component .box-first {
     background: #2F2D30;
-    border-color: #F7F6F4; }
+    border-color: #57BA95; }
   .component .box-nested {
     background: #fff;
-    border-color: #F7F6F4; }
+    border-color: #57BA95; }
   .component .box-large {
     height: 8rem; }
   .component .box-container {
@@ -344,7 +344,7 @@ img {
 
 /* scss/atoms/_animations.scss */
 #animationSandbox + form > select {
-  background-color: #F7F6F4; }
+  background-color: #57BA95; }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -1403,7 +1403,7 @@ a, a:visited {
     border-bottom: 3px solid #57BA95; }
     a.underline:hover, a.underline.hover, a:visited.underline:hover, a:visited.underline.hover {
       background-color: #57BA95;
-      color: #7BB644;
+      color: #57BA95;
       text-decoration: none; }
   a.bold, a:visited.bold {
     font-weight: bold; }
@@ -1412,7 +1412,7 @@ a, a:visited {
 
 /* scss/atoms/_foundation.scss */
 main > section > header {
-  background: #7BB644; }
+  background: #57BA95; }
   main > section > header h1 {
     font-size: 8.4vw;
     text-align: center;
@@ -2035,7 +2035,7 @@ body.admin-bar header#masthead {
   .five-seven-row .row section.col-lg-7 > div {
     background-color: #F7F6F4;
     padding: 2rem;
-    border: 4px solid #7BB644;
+    border: 4px solid #57BA95;
     border-top: 0;
     height: 100%;
     box-sizing: border-box; }
@@ -2045,10 +2045,10 @@ body.admin-bar header#masthead {
     @media only screen and (min-width: 1000px) {
       .five-seven-row .row section.col-lg-7 > div {
         border-left: 0;
-        border-top: 4px solid #7BB644; } }
+        border-top: 4px solid #57BA95; } }
     .five-seven-row .row section.col-lg-7 > div header h1 {
       font-weight: bold;
-      color: #7BB644;
+      color: #57BA95;
       font-size: 3.5rem; }
       @media only screen and (min-width: 750px) {
         .five-seven-row .row section.col-lg-7 > div header h1 {
@@ -2097,7 +2097,7 @@ body.admin-bar header#masthead {
         padding: 2rem; } }
     .five-seven-row.v2 .row .col-lg-5 h1 {
       font-weight: bold;
-      color: #7BB644;
+      color: #57BA95;
       font-size: 3rem;
       text-align: right;
       line-height: 1.2; }
@@ -2130,7 +2130,7 @@ body.admin-bar header#masthead {
 
 /* scss/content_blocks/_hover-link-grid.scss */
 .hover-link-grid > header {
-  background: #F7F6F4; }
+  background: #57BA95; }
   .hover-link-grid > header h1 {
     font-size: 8.4vw;
     text-align: center;
@@ -2196,7 +2196,7 @@ body.admin-bar header#masthead {
 
 /* scss/content-blocks/_column-grid.scss */
 .hover-link-grid header {
-  background: #7BB644; }
+  background: #57BA95; }
   .hover-link-grid header h1 {
     font-size: 8.4vw;
     text-align: center;
@@ -2251,7 +2251,7 @@ body.admin-bar header#masthead {
     transition: transform .25s ease-in-out; }
 
 .column-grid header h1 {
-  background: #7BB644;
+  background: #57BA95;
   font-size: 8.4vw;
   text-align: center;
   background-size: cover;
@@ -2267,7 +2267,7 @@ body.admin-bar header#masthead {
 .column-grid .row article h2 {
   font-size: 30px;
   text-align: left;
-  color: #7BB644;
+  color: #57BA95;
   margin-bottom: 10px; }
 
 .column-grid .row article .header {
@@ -2278,7 +2278,7 @@ body.admin-bar header#masthead {
 
 .column-grid .row article .subheader {
   font-family: "Roboto", sans-serif;
-  color: #7BB644;
+  color: #57BA95;
   font-size: 25px;
   display: block; }
 
@@ -2294,7 +2294,7 @@ body.admin-bar header#masthead {
 
 /* scss/content_blocks/_freeform.scss */
 .free-form > header {
-  background: #F7F6F4; }
+  background: #57BA95; }
   .free-form > header h1 {
     font-size: 8.4vw;
     text-align: center;
