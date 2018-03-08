@@ -1,0 +1,73 @@
+/* scss/molecules/_buttons.scss */
+
+.atoms .color.buttons {
+    padding-top: 15px !important;
+}
+
+/* BUTTON HELPERS 
+================================================== */
+
+.button {
+    transition: .25s all ease-in-out;
+    color: #f7abb2;
+    border: 1px solid;
+    line-height: 2.25rem;
+    font-size: .85rem;
+    border-radius: 1.5rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    padding: 0 20px;
+    &:hover {
+    	transition: .25s all ease-in-out;
+    	color: white; 
+    	background-color:#f7abb2;
+    }
+    &.reverse {
+        color: white; 
+    	background-color:#f7abb2;
+    	&:hover {
+    	    color: #f7abb2; 
+    	    background-color:#fff;
+    	}
+    }
+    &.ltpink {
+    	border-color: $light;
+    	color: $light;
+    	background-color:$dark;
+    	&:hover {
+        	transition: .25s all ease-in-out;
+        	color: $dark; 
+        	background-color:$light;
+        	border-color: transparent;
+        }
+        &.reverse {
+            color: white; 
+        	background-color:#f7abb2;
+        	&:hover {
+        	    color: #f7abb2; 
+        	    background-color:#fff;
+        	}
+        }
+    }
+    &.dkgrey {
+    	border-color: $dark;
+    	color: $dark;
+    	background-color:white;
+    	&:hover {
+        	transition: .25s all ease-in-out;
+        	color: white; 
+        	background-color:$dark;
+        	border-color: transparent;
+        }
+        &.reverse {
+            color: white; 
+        	background-color:$dark;
+        	&:hover {
+        	    color: $dark; 
+        	    background-color:#fff;
+        	}
+        }
+    }
+}

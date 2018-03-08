@@ -1,0 +1,18 @@
+.atomic-h1 {
+	margin-bottom: 24px;
+	margin-top: 0;
+	font-weight: 300;
+	font-family: $font1;
+	font-size: 29px;
+	border-bottom: 1px solid;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background: #222;
+	color: white;
+	width: calc(100% + 40px);
+	margin-left: -40px;
+	line-height: 52px;
+	padding: 0 0 0 40px;
+}
+

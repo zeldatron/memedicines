@@ -1,0 +1,63 @@
+/* scss/content_blocks/_5-x-7-row-v2.scss */
+
+.five-seven-row.v2{
+    > article{
+		margin-right: auto;
+	    margin-left: auto;
+	    max-width: 1150px;
+    }
+	&:first-of-type > div{
+		padding-top: 6rem
+	    }
+		.row {
+		    background-color: $sidebar;
+            padding: 2rem;
+			.col-lg-5 {
+				order: -1;
+					padding: 2rem;
+    				@include bp(viewport_l){
+    					padding: 2rem;
+            		}
+				h1 {
+				    font-weight: bold;
+					color: $pop;
+					font-size: 3rem;
+					text-align: right;
+					line-height: 1.2;
+					@include bp(viewport_m){
+						font-size: 4rem;
+					}
+					> span {
+						font-size: 2rem;
+						color: black;
+						@include bp(viewport_m){
+							font-size: 2.7rem;
+						}
+					}
+				}
+			}
+			.col-lg-7{
+				padding: 2rem;
+				p,li {
+				    font-size: 1.6rem;
+					line-height: 1.5;
+				    &:not(:last-child){
+					    margin-bottom: 2rem;
+					    @include bp(viewport_m){
+						    margin-bottom: 2rem;
+					    }
+				    }
+					@include bp(viewport_m){
+					    font-size: 1.8rem;
+					}
+				}
+				ul {
+					padding-left: 4rem;
+					li {
+						list-style: disc;
+					}
+				}
+			}
+
+		}
+	}

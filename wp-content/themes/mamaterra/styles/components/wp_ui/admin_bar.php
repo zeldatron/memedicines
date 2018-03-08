@@ -1,0 +1,1 @@
+<!-- components/wp_ui/admin_bar.php -->

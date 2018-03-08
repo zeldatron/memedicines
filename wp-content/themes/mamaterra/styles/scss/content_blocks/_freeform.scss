@@ -1,0 +1,21 @@
+/* scss/content_blocks/_freeform.scss */
+
+.free-form {
+	>header {
+		background: $styleguide_pop; 
+		h1 {
+			font-size: 8.4vw;
+			text-align: center;
+			background: url('../img/red-texture.jpg');
+			background-size: cover;
+			color: #fff;
+			margin: 0;
+			font-weight: normal;
+			letter-spacing: 2px;
+			padding: 3px 5px 6px;
+			@media (min-width: 1000px) {
+				font-size: 8.4rem;
+			}
+		}
+	}
+}

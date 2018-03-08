@@ -1,0 +1,24 @@
+/* scss/atoms/_links.scss */
+
+a, a:visited {
+    color: $light;
+    text-decoration: none;
+    &:hover, &.hover{
+        color: $dark;
+        text-decoration: underline;
+    }
+    &.underline{
+        border-bottom: 3px solid $pop2;
+        &:hover, &.hover{
+            background-color: $pop2;
+            color: $pop;
+            text-decoration: none;
+        }
+    }
+    &.bold{
+        font-weight: bold;
+        &:hover, &.hover{
+            text-decoration: line-through;
+        }
+    }
+}

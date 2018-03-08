@@ -1,0 +1,21 @@
+/* scss/grid/_column.scss */
+
+.row.column {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    > * {
+        padding-bottom: 2rem;
+    }
+    > *:last-of-type {
+        padding-bottom: 0;
+    }
+    &.reverse {
+        -ms-flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        flex-direction: column-reverse;
+    }
+}

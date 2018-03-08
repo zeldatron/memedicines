@@ -1,0 +1,15 @@
+/* scss/scripts/_equalheightelements.scss */
+
+.equalheightcontainer article {
+  float: left;
+  width: 23%;
+  background: $medium;
+  margin: 10px 1%;
+  padding: 1%;
+}
+
+@media (max-width: 900px) {
+.equalheightcontainer article {
+    width: 48%
+  }
+}

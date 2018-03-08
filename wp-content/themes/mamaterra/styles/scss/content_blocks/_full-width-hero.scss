@@ -1,0 +1,115 @@
+/* scss/content_blocks/_full-width-hero.scss */
+
+.hero {
+    height: 100vw;
+    width: 100vw;
+    position:relative;
+    z-index: 1;
+    @include bp(viewport_m){
+	   height: 100vh; 
+    }
+    &.image {
+        background-size: cover !important;
+    }
+    header {
+      right: 0;
+      position: absolute;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: black;
+      padding: 5px;
+      background-size: cover;
+      text-align: center;
+      background-position-x: -50px;
+      @include bp(viewport_m){
+        padding: 50px 135px 50px 50px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 40px;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+        @include bp(viewport_m){
+          font-size: 100px;
+        }
+      }
+      span {
+        margin: 0;
+        color: #fff;
+        @media (min-width: 750px) {
+          font-size: 25px;
+        }
+        font-size: 36px;
+        display: block;
+      }
+    }
+    &.black-bg header {
+      background-image: url('../img/black-bg.png');
+    }
+    &.red-bg header {
+      background-image: url('../img/red-texture.jpg');
+    }
+  &.homepage-hero {    
+    header {
+      position: relative;
+      background: none;
+      padding: 5px;
+      background-size: cover;
+      top: auto;
+      right: auto;
+      transform: none;
+      text-align: left;
+      max-width: 50vw;
+      margin: 7vw;
+      h1 {
+        margin: 0;
+        font-family: $font__subheading;
+        font-weight: bold;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      span {
+        margin: 0;
+        color: #fff;
+        @include bp(viewport_m){
+          font-size: 25px;
+        }
+        font-size: 36px;
+        display: block;
+      }
+    }
+  }
+}
+.video-background {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  pointer-events: none;
+  @include bp(viewport_m){
+	  height: 100vh;
+  }
+}
+//styleguide styles
+.source{
+    .hero {
+        height: 90vw;
+        width: 100%;
+        position:relative;
+        z-index: 1;
+        @include bp(viewport_m){
+    	   height: 90vh; 
+        }
+    }
+}

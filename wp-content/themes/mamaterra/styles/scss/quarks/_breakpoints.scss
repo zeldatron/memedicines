@@ -1,0 +1,77 @@
+/* scss/quarks/_breakpoints.scss */
+
+$viewport_xs: 	400px;
+$viewport_s: 	550px;
+$viewport_m: 	750px;
+$viewport_l: 	1000px;
+$viewport_xl: 	1200px;
+
+//media queries
+
+$media-queries: true;
+
+@mixin bp($point) {
+  @if ($media-queries) {
+	$viewport_xs: 	400px;
+	$viewport_s: 	550px;
+	$viewport_m: 	750px;
+	$viewport_l: 	1000px;
+	$viewport_xl: 	1200px;
+
+    @if $point == viewport_xl {
+      @media // Large Screen Desktops and Laptops
+      only screen and (min-width: #{$viewport_xl}) {
+        @content;
+      }
+    }
+    @if $point == viewport_l {
+      @media // Small Screen Desktops and Laptops
+      only screen and (min-width: #{$viewport_l}) {
+        @content;
+      }
+    }
+    @if $point == viewport_m {
+      @media // tablet (portrait and landscape)
+      only screen and (min-width: #{$viewport_m}) {
+        @content;
+      }
+    }
+    @if $point == viewport_s {
+      @media // large phone (portrait and landscape)
+      only screen and (min-width: #{$viewport_s}) {
+        @content;
+      }
+    }
+    @if $point == viewport_xs {
+      @media // phone (portrait and landscape)
+      handheld,
+      only screen and (min-width: #{$viewport_xs}) {
+        @content;
+      }
+    }
+    @if $point == phone {
+      @media // phone (portrait and landscape)
+      handheld,
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-width: #{$viewport_xs})
+      			  and (max-width: #{$viewport_m}) {
+        @content;
+      }
+    }
+  }
+}
+
+@include bp(viewport_xl){
+}
+@include bp(viewport_l){
+}
+@include bp(viewport_m){
+}
+@include bp(viewport_s){
+}
+@include bp(viewport_xs){
+}
+@include bp(phone){
+}
+
+

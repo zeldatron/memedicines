@@ -1,0 +1,60 @@
+/* scss/pages/_landing_pages.scss */
+
+
+.page-template-page-template-landing .hero.header {
+	min-height:475px;
+}
+
+.page-template-page-template-landing .hero.header .overlay {
+    background-color: rgba(22,28,51,.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.page-template-page-template-landing .u-full-width,
+.page-template-page-template-landing .u-full-width p {
+	font-size:2.3rem;
+	line-height:3.3rem;
+}
+
+.page-template-page-template-landing  .hero.header .subheadline {
+	display:block;
+	font-size:3rem;
+}
+
+.page-template-page-template-landing  .cards.no-image article a h3 + span {
+	letter-spacing:0;
+}
+
+
+@media (min-width: 750px) {
+	.page-template-page-template-landing .hero.header header {
+		bottom:33%;
+	}
+	
+	.page-template-page-template-landing .hero.header header h1 {
+		font-size:6.5rem;
+	}
+	
+	.page-template-page-template-landing .hero.header header .subheadline {
+		font-size:4rem;
+	}
+	
+	.page-template-page-template-landing section.cards {
+		margin-bottom:-35px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.page-template-page-template-landing .hero.header header h1 {
+		font-size:8rem;
+	}
+	
+	.page-template-page-template-landing .hero.header header .subheadline {
+		font-size:5rem;
+	}
+}

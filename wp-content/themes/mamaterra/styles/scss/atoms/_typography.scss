@@ -1,0 +1,5 @@
+/* scss/atoms/_typography.scss */
+
+.raleway, body {font-family:$font__main;}
+.roboto-slab, h1 {font-family:$font__heading;}
+.roboto, h2, h1+p, h1+span {font-family:$font__subheading;}

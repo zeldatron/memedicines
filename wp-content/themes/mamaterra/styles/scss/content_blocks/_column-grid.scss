@@ -1,0 +1,120 @@
+/* scss/content-blocks/_column-grid.scss */
+
+.hover-link-grid {
+	header {
+		background: $pop; 
+		h1 {
+			font-size: 8.4vw;
+			text-align: center;
+			background-size: cover;
+			color: #fff;
+			margin: 0;
+			font-weight: normal;
+			letter-spacing: 2px;
+			padding: 3px 5px 6px;
+			@media (min-width: 1000px) {
+				font-size: 84px;
+			}
+		}
+	}
+	.row article{
+	    position: relative;
+	    background-size: cover !important;
+	    overflow: hidden;
+	    &:before {
+			content: "";
+			float: left;
+			padding-top: 100%;
+		}
+	    header {
+	        position: absolute;
+	        top: 0;
+	        bottom: 0;
+	        padding: 4%;
+	        display: flex;
+	        flex-direction: column;
+	        background: rgba(0,0,0,.5);
+	        transform: translateY(calc(100% - 3rem - 8%));
+	        transition: transform .25s ease-in-out;
+	        h1 {
+	            font-size: 2rem;
+	            line-height: 3rem;
+	            margin: 0;
+	            text-align: center;
+				padding-bottom: 4%;
+				color: $white
+			}
+			h2 {
+				font-size: 30px;
+				text-align: center;
+				color: $white;
+				margin-bottom: 10px;
+			}
+	        p {
+	            flex-grow: 1;
+	            flex-shrink: 1;
+				overflow: hidden;
+				text-align: center;
+				color: $white;
+	        }
+	    }
+		&:hover {
+		    header {
+			    transform: translateY(0);
+				transition: transform .25s ease-in-out;
+		    }
+		}
+	}
+}
+
+.column-grid {
+	header {
+		 
+		h1 {
+			background: $pop;
+			font-size: 8.4vw;
+			text-align: center;
+			background-size: cover;
+			color: #fff;
+			margin: 0;
+			font-weight: normal;
+			letter-spacing: 2px;
+			padding: 3px 5px 6px;
+			@media (min-width: 1000px) {
+				font-size: 84px;
+			}
+		}
+	}
+	.row article {
+		
+		h2 {
+			font-size: 30px;
+			text-align: left;
+			color: $pop;
+			margin-bottom: 10px;
+		}
+		.header {
+			font-family: $font__subheading;
+			color: $black;
+			font-size: 30px;
+			display: block;
+		}
+		.subheader {
+			font-family: $font__subheading;
+			color: $pop;
+			font-size: 25px;
+			display: block;
+		}
+		p {
+			flex-grow: 1;
+			flex-shrink: 1;
+			overflow: hidden;
+			text-align: left;
+			color: $black;
+		}
+		.button {
+			width: 90%;
+		}
+	}
+
+}

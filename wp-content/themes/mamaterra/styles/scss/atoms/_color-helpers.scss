@@ -1,0 +1,43 @@
+.ltpink, h2, h1+p, h1+span{color:$light;}
+.ltpink-bg{background-color:$light;}
+.white{color:$white;}
+.white-bg{background-color:$white;}
+.dkpink, h1{color:$medium;}
+.dkpink-bg{background-color:$dark;}
+.dkgrey, body{color:$dark;}
+.dkgrey-bg{background-color:$dark;}
+.black{color:$black;}
+.black-bg{background-color:$black;}
+
+.atoms .colors:before,
+.atoms .colors:after {
+  content: " ";
+  display: table;
+}
+
+.colors:after {
+  clear: both;
+}
+.atoms .color {
+  *zoom: 1;
+  border: 1px solid #E1E1E1;
+}
+.atoms .color .swatch{
+  padding: 30px !important
+}
+
+.hex:before{
+    content: "hex: ";
+}
+.class > li {
+    margin-top: 5px;
+}
+.class .text:before{
+    content: "text: ";
+}
+.class .bg:before{
+    content: "background: ";
+}
+.sass:before{
+    content: "sass: ";
+}

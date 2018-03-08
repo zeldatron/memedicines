@@ -1,0 +1,146 @@
+/* scss/molecules/_accordion.scss */
+
+/* accordion styles */
+
+.accordion-toggle {
+	position: relative;
+	transition: none;
+	border: 1px solid $medium;
+	color: $medium;
+	transition: all .25s ease-out;
+    h1 {
+    	cursor: pointer;
+    	background: white;
+    	height: 4rem;
+    	line-height: 4rem;
+    	font-size: 1.25rem;
+    	padding: 0 4%;
+    	margin-bottom: 0;
+    	overflow: hidden;
+    	margin-top: 0;
+        span {}
+    }
+}
+@media (min-width: 750px){
+	.accordion-toggle h1 {
+		font-size: 1.7rem;
+		height: 5rem;
+		line-height: 5rem;
+	}
+	.accordion-toggle h1 span {
+		display: inline-block
+	}
+}
+
+@media (min-width: 1000px){
+	.accordion-toggle h1 {
+		font-size: 2.2rem;
+		height: 6rem;
+		line-height: 6rem;
+	}
+}
+.accordion-toggle h1:hover, .accordion-toggle h1:hover + .icon  {
+	background: #F5F5F5;
+}
+.accordion-toggle h1:hover {
+	color:#222;
+}
+.accordion-toggle.clicked h1, .accordion-toggle.clicked h1 +.icon  {
+	background: #222;
+	color: #fff;
+}
+.accordion-toggle ~ {
+    .accordion-content {
+    	background:white;
+    	max-height: 0px;
+    	overflow: hidden;
+    	opacity:0;
+    	transition: opacity 10s, max-height .5s ease-out;
+    }
+    .accordion-content ul {
+        list-style: none;
+        margin-left:4%;
+    }
+    .accordion-content ul li {
+    	margin: 4rem 0 0 0;
+    }
+    .accordion-content ul li a {
+        display:inline-block;
+        font-family: 'DINNextLTPro-Medium';
+        width:53%;
+        margin-right:2%;
+    }
+    .accordion-content ul li span.location {
+        display:inline-block;
+        width:calc(45% - 215px);
+        min-width:140px;
+    }
+    .accordion-content ul li span.department {
+        display:inline-block;
+        font-size:13px;
+        letter-spacing:.02em;
+        width:215px;
+        text-transform:uppercase;
+    }
+}
+@media (max-width: 1000px) {
+	.accordion-content ul li a, .accordion-content ul li span.location,.accordion-content ul li span.department {
+        width:calc(98% - 215px);
+	}
+ 	.accordion-content ul li span.location {
+    	width:215px;
+	}
+}
+@media (max-width: 650px) {
+	.accordion-content ul li a, .accordion-content ul li span.location,.accordion-content ul li span.department {
+		width:100%
+	}
+	.accordion-toggle h1 span {
+	    left:4%;
+	    top:25px;
+	}
+}
+.clicked + .accordion-content{
+	max-height: 2500px;
+	opacity:1;
+	transition: opacity .4s, max-height 2s ease-out;
+}
+.accordion-toggle h1 + .icon .one, .accordion-toggle h1 + .icon .two {
+	position: absolute;
+	border-radius: 0;
+	background: $medium;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 400ms all ease-out;
+	transition: 400ms all ease-out;
+}
+.accordion-toggle h1 + .icon .one {
+  	top: 33px;
+    left: 26.5px;
+    right: 27.5px;
+    height: 3px;
+}
+.accordion-toggle h1 + .icon .two {
+	top: 25.5px;
+    left: 32.5px;
+    bottom: 27px;
+    width: 3px;
+}
+
+.accordion-toggle h1 + .icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	background: white;
+	cursor: pointer
+}
+.accordion-toggle.clicked .icon {
+	cursor: pointer;
+}
+.accordion-toggle.clicked .icon .two {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+

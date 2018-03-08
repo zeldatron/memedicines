@@ -1,0 +1,354 @@
+[
+    {
+        "component": "equalheightelements",
+        "category": "scripts",
+        "description": "",
+        "backgroundColor": "",
+        "order": -11,
+        "has_js": "true"
+    },
+    {
+        "component": "color-helpers",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": 1,
+        "has_js": "false"
+    },
+    {
+        "component": "accordion",
+        "category": "molecules",
+        "description": "",
+        "backgroundColor": "",
+        "order": -16,
+        "has_js": "true"
+    },
+    {
+        "component": "buttons",
+        "category": "molecules",
+        "description": "Classes can be added to almost any element - not just the &lt;button> element - to achieve this effect. Classes provided should be added to the element in addition to the .button class.",
+        "backgroundColor": "",
+        "order": -17,
+        "has_js": "true"
+    },
+    {
+        "component": "modernizr",
+        "category": "scripts",
+        "description": "",
+        "backgroundColor": "",
+        "order": 2,
+        "has_js": "true"
+    },
+    {
+        "component": "breakpoints",
+        "category": "quarks",
+        "description": "breakpoint\/media query rules and variables",
+        "backgroundColor": "",
+        "order": 4,
+        "has_js": "false"
+    },
+    {
+        "component": "colors",
+        "category": "quarks",
+        "description": "sets sitewide color variables",
+        "backgroundColor": "",
+        "order": 0,
+        "has_js": "false"
+    },
+    {
+        "component": "retina-images-mixin",
+        "category": "quarks",
+        "description": "a mixin to detect and load retina images when applicable. To use, add 2 files, first normally sized ( e.g. image.jpg ) and then one sized for retina with the suffix '@2x' ( e.g. image@2x.jpg ) and the mixin will load the best choice. ",
+        "backgroundColor": "",
+        "order": 7,
+        "has_js": "false"
+    },
+    {
+        "component": "fonts",
+        "category": "quarks",
+        "description": "font embeds and variables",
+        "backgroundColor": "",
+        "order": 9,
+        "has_js": "true"
+    },
+    {
+        "component": "typography",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": 0,
+        "has_js": "false"
+    },
+    {
+        "component": "ui-variables",
+        "category": "quarks",
+        "description": "change global color, font, etc. variables to customize the styleguide UI",
+        "backgroundColor": "",
+        "order": 5,
+        "has_js": "false"
+    },
+    {
+        "component": "sidebar",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -14,
+        "has_js": "false"
+    },
+    {
+        "component": "responsive",
+        "category": "grid",
+        "description": "Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md & lg viewport widths.",
+        "backgroundColor": "",
+        "order": 1,
+        "has_js": "false"
+    },
+    {
+        "component": "reversing",
+        "category": "grid",
+        "description": "adds flex-direction to reverse the direction of the content flow",
+        "backgroundColor": "",
+        "order": 9,
+        "has_js": "false"
+    },
+    {
+        "component": "reordering",
+        "category": "grid",
+        "description": "Adds order declarations to reorder columns. ",
+        "backgroundColor": "",
+        "order": 8,
+        "has_js": "false"
+    },
+    {
+        "component": "distribution",
+        "category": "grid",
+        "description": "Add classes to distribute the contents of a row or column.",
+        "backgroundColor": "",
+        "order": 7,
+        "has_js": "false"
+    },
+    {
+        "component": "alignment",
+        "category": "grid",
+        "description": "Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column. Uses justify-content and align-items declarations.",
+        "backgroundColor": "",
+        "order": 6,
+        "has_js": "false"
+    },
+    {
+        "component": "nested_grid",
+        "category": "grid",
+        "description": "nest grids inside grids inside grids...",
+        "backgroundColor": "",
+        "order": 5,
+        "has_js": "false"
+    },
+    {
+        "component": "auto_width",
+        "category": "grid",
+        "description": "Add any number of auto sizing columns to a row. Let the grid figure it out.",
+        "backgroundColor": "",
+        "order": 4,
+        "has_js": "false"
+    },
+    {
+        "component": "offsets",
+        "category": "grid",
+        "description": "offset a column",
+        "backgroundColor": "",
+        "order": 3,
+        "has_js": "false"
+    },
+    {
+        "component": "fluid",
+        "category": "grid",
+        "description": "Percent based widths allow fluid resizing of columns and rows.",
+        "backgroundColor": "",
+        "order": 2,
+        "has_js": "false"
+    },
+    {
+        "component": "simple_syntax",
+        "category": "grid",
+        "description": "All you need to remember is row, column, content.",
+        "backgroundColor": "",
+        "order": 0,
+        "has_js": "false"
+    },
+    {
+        "component": "admin_bar",
+        "category": "wp_ui",
+        "description": "",
+        "backgroundColor": "",
+        "order": -24,
+        "has_js": "false"
+    },
+    {
+        "component": "footer",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -25,
+        "has_js": "false"
+    },
+    {
+        "component": "fullscreen-hero",
+        "category": "organisms",
+        "description": "a 100% height and width container with options for a background image or video, header text, and a CTA button",
+        "backgroundColor": "",
+        "order": -26,
+        "has_js": "false"
+    },
+    {
+        "component": "header",
+        "category": "organisms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -28,
+        "has_js": "false"
+    },
+    {
+        "component": "column",
+        "category": "grid",
+        "description": "",
+        "backgroundColor": "",
+        "order": 10,
+        "has_js": "false"
+    },
+    {
+        "component": "seamless",
+        "category": "grid",
+        "description": "remove the space between elements for a seamless grid by adding the class .seamless to your .row element",
+        "backgroundColor": "",
+        "order": -30,
+        "has_js": "false"
+    },
+    {
+        "component": "mixins-master",
+        "category": "quarks",
+        "description": "global sass mixins, an abstraction of a common pattern into a semantic and reusable chunk. ",
+        "backgroundColor": "",
+        "order": 6,
+        "has_js": "false"
+    },
+    {
+        "component": "css-reset",
+        "category": "quarks",
+        "description": "resets the styling of all HTML elements to a consistent baseline",
+        "backgroundColor": "",
+        "order": 3,
+        "has_js": "false"
+    },
+    {
+        "component": "animations",
+        "category": "atoms",
+        "description": "just-add-water CSS animations : https:\/\/daneden.github.io\/animate.css\/",
+        "backgroundColor": "",
+        "order": -35,
+        "has_js": "true"
+    },
+    {
+        "component": "links",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -36,
+        "has_js": "false"
+    },
+    {
+        "component": "media",
+        "category": "quarks",
+        "description": "global baseline styles for images, videos, etc.",
+        "backgroundColor": "",
+        "order": 8,
+        "has_js": "false"
+    },
+    {
+        "component": "modernizr",
+        "category": "quarks",
+        "description": "feature detection for HTML\/CSS",
+        "backgroundColor": "",
+        "order": -34,
+        "has_js": "true"
+    },
+    {
+        "component": "modal",
+        "category": "molecules",
+        "description": "",
+        "backgroundColor": "",
+        "order": -37,
+        "has_js": "true"
+    },
+    {
+        "component": "full-width-hero",
+        "category": "content_blocks",
+        "description": "A 100% width and height content block with a choice of a background image, a video, or a carousel ",
+        "backgroundColor": "",
+        "order": 0,
+        "has_js": "true"
+    },
+    {
+        "component": "freeform",
+        "category": "content_blocks",
+        "description": "A WYSIWYG you can stick anywhere",
+        "backgroundColor": "",
+        "order": 5,
+        "has_js": "false"
+    },
+    {
+        "component": "wp-ui-variables",
+        "category": "quarks",
+        "description": "sets custom elements and styles for the Wordpress UI",
+        "backgroundColor": "",
+        "order": 1,
+        "has_js": "false"
+    },
+    {
+        "component": "column-grid",
+        "category": "content_blocks",
+        "description": "",
+        "backgroundColor": "",
+        "order": 4,
+        "has_js": "false"
+    },
+    {
+        "component": "foundation",
+        "category": "atoms",
+        "description": "",
+        "backgroundColor": "",
+        "order": -41,
+        "has_js": "false"
+    },
+    {
+        "component": "5-x-7-row-v1",
+        "category": "content_blocks",
+        "description": "reversible, with text\/content in the 7 column block and a background image in the 5 column block.",
+        "backgroundColor": "",
+        "order": 1,
+        "has_js": "false"
+    },
+    {
+        "component": "5-x-7-row-v2",
+        "category": "content_blocks",
+        "description": "reversible, with text\/content in the 7 column block and an h1 title in the 5 column block.",
+        "backgroundColor": "",
+        "order": 2,
+        "has_js": "false"
+    },
+    {
+        "component": "hover-link-grid",
+        "category": "content_blocks",
+        "description": "a flexible, square grid that displays content overlays on hover and links to either a new page\/section or behaves as a gallery and links to an enlarged version of the background image.",
+        "backgroundColor": "",
+        "order": 3,
+        "has_js": "false"
+    },
+    {
+        "component": "general-helpers",
+        "category": "atoms",
+        "description": "multi-purpose helper classes",
+        "backgroundColor": "",
+        "order": -42,
+        "has_js": "false"
+    }
+]

@@ -1,0 +1,21 @@
+/* scss/organisms/_fullscreen-hero.scss */
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+}
+.video-background {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}

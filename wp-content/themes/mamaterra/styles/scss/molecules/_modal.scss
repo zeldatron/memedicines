@@ -1,0 +1,81 @@
+/* scss/molecules/_modal.scss */
+
+// Show Button
+
+button.pop-it-up{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  
+
+  
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+// Close Button
+
+.close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+// The mask
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  
+  opacity: 0;
+  
+  transition: 0.7s;
+}
+
+// Modal
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    transform: translate(-50%, -100%);
+}
+
+// Class Active
+
+.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+// When active class is added, that affects the modal class
+
+.active + .modal{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+#modal-container .component .source {
+    position: relative;
+    min-height: 300px;
+}

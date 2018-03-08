@@ -1,0 +1,64 @@
+/* CSS Document */
+
+.copyBtn{
+    position: absolute;
+    top: -33px;
+    right: 10px;
+    z-index: 10;
+    display: block;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #929292;
+    font-weight: 300;
+    cursor: pointer;
+    //background-color: #fff;
+    //border: 1px solid #e1e1e8;
+    font-family:$font1;
+    //border-radius: 0 4px 0 4px;
+}
+.copyBtn-edit{
+    right: 45px;
+    display: none;
+}
+
+
+.nav-tabs-atomic > li.expandItem{
+    float: right;
+    right: 68px;
+	background: rgba(113,194,82,.8);
+    width: calc(100% - 68px);
+    top: 1px;
+    position: absolute;
+    text-align: right;
+}
+
+.codeBlocks-open .nav-tabs-atomic > li.expandItem{
+    position: relative;
+    width: auto;
+    background: rgba(113,194,82,1);
+    a {
+	    color: rgba(113,194,82,1);
+	    svg {
+		    color: #929292;
+	    }
+	    &:before {
+		    content: "Collapse";
+		    position: absolute;
+			right: 10px;
+			color: #929292;
+	    }
+	}
+}
+
+
+.expandBtn{
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #929292;
+    font-weight: 300;
+    cursor: pointer;
+
+}
+
+
