@@ -26,15 +26,15 @@
     <button class="button white green-txt">test</button>
     <div>
         <ul class="no-bullets">
-            <li class="white-txt">.white</li>
+            <li class="white-txt">.white.green-txt</li>
         </ul>
     </div>
 </article>
 <article class="color buttons equalheight dk-grey-bg">
-    <button class="button white reverse green-txt">test</button>
+    <button class="button white reverse purple-txt">test</button>
     <div>
         <ul class="no-bullets">
-            <li class="white-txt">.white.reverse</li>
+            <li class="white-txt">.white.reverse.purple.txt</li>
         </ul>
     </div>
 </article>
@@ -46,3 +46,20 @@
         </ul>
     </div>
 </article>
+<article class="color buttons equalheight dk-grey-bg">
+    <button class="button green">test</button>
+    <div>
+        <ul class="no-bullets">
+            <li class="white-txt">.green</li>
+        </ul>
+    </div>
+</article>
+<article class="color buttons equalheight dk-grey-bg">
+    <button class="button white green reverse">test</button>
+    <div>
+        <ul class="no-bullets">
+            <li class="white-txt">.green.reverse</li>
+        </ul>
+    </div>
+</article>
+</div>
