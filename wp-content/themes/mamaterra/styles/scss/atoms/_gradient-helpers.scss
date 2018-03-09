@@ -1,0 +1,16 @@
+/* scss/atoms/_gradient-helpers.scss */
+
+.gradient-green {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7fc95b+0,b8db7e+35,b8db7e+65,7fc95b+100 */
+background: #7fc95b; /* Old browsers */
+background: -moz-linear-gradient(left, #7fc95b 0%, #b8db7e 35%, #b8db7e 65%, #7fc95b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #7fc95b 0%,#b8db7e 35%,#b8db7e 65%,#7fc95b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #7fc95b 0%,#b8db7e 35%,#b8db7e 65%,#7fc95b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.gradient-green-glow {
+background: #ffffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ffffff 25%, #ffffff 25%, #dfecb9 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #ffffff 25%,#ffffff 25%,#dfecb9 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #ffffff 25%,#ffffff 25%,#dfecb9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

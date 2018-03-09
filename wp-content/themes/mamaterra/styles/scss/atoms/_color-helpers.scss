@@ -1,13 +1,26 @@
-.ltpink{color:$light;}
-.ltpink-bg{background-color:$light;}
-.white{color:$white;}
 .white-bg{background-color:$white;}
-.dkpink{color:$medium;}
-.dkpink-bg{background-color:$dark;}
-.dkgrey, body{color:$dark;}
-.dkgrey-bg{background-color:$dark;}
-.black{color:$black;}
 .black-bg{background-color:$black;}
+.dk-grey-bg{background-color:$dk-grey;}
+.md-grey-bg{background-color:$md-grey;}
+.lt-tan-bg{background-color:$lt-tan;}
+.md-brown-bg{background-color:$md-brown;}
+.dk-brown-bg{background-color:$dk-brown;}
+.green-bg{background-color:$green;}
+.md-green-bg{background-color:$md-green;}
+.aqua-bg{background-color:$aqua;}
+.minty-fresh-bg{background-color:$minty-fresh;}
+.purple-bg{background-color:$purple;}
+
+.white-txt{color:$white;}
+.black-txt{color:$black;}
+.dk-grey-txt{color:$dk-grey;}
+.md-grey-txt{color:$md-grey;}
+.lt-tan-txt{color:$lt-tan;}
+.md-brown-txt{color:$md-brown;}
+.dk-brown-txt{color:$dk-brown;}
+.green-txt{color:$green;}
+.md-green-txt{color:$md-green;}
+.purple-txt{color:$purple;}
 
 .atoms .colors:before,
 .atoms .colors:after {

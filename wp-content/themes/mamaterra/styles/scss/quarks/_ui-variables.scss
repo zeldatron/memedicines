@@ -7,11 +7,11 @@
 /* end UI import */
 
 /* UI colors */
-$styleguide_pop: $pop;
-$styleguide_text: $dark;
-$styleguide_sidebar: $medium;
+$styleguide_pop: $aqua;
+$styleguide_text: $dk-grey;
+$styleguide_sidebar: $md-brown;
 $styleguide_bg: $white;
-$styleguide_pop2: $dark;
+$styleguide_pop2: $dk-grey;
 
 hr {
     width: 20%;
@@ -34,7 +34,7 @@ hr {
 }
 .component {
     h2 {
-    	color: $styleguide_text
+    	//color: $styleguide_text
     }
     pre {
       overflow-x: auto;

@@ -253,7 +253,7 @@
         "description": "",
         "backgroundColor": "",
         "order": -36,
-        "has_js": "false"
+        "has_js": "true"
     },
     {
         "component": "media",
@@ -349,6 +349,14 @@
         "description": "multi-purpose helper classes",
         "backgroundColor": "",
         "order": -42,
+        "has_js": "false"
+    },
+    {
+        "component": "gradient-helpers",
+        "category": "atoms",
+        "description": "classes for gradient backgrounds",
+        "backgroundColor": "",
+        "order": -43,
         "has_js": "false"
     }
 ]

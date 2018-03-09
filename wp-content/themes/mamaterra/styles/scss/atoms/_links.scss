@@ -1,24 +1,20 @@
 /* scss/atoms/_links.scss */
 
 a, a:visited {
-    color: $light;
+    color: $pop;
     text-decoration: none;
+    transition:all .35s;
     &:hover, &.hover{
-        color: $dark;
         text-decoration: underline;
+        color: $black;
     }
-    &.underline{
-        border-bottom: 3px solid $pop2;
+    &.underline, p.a{
+        border-bottom: 2px solid $pop;
+        color: $text;
         &:hover, &.hover{
-            background-color: $pop2;
-            color: $pop;
+            background-color: $lt_aqua;
+            border-color: $lt-aqua;
             text-decoration: none;
-        }
-    }
-    &.bold{
-        font-weight: bold;
-        &:hover, &.hover{
-            text-decoration: line-through;
         }
     }
 }
