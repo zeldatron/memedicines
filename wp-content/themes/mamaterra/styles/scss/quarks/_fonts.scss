@@ -1,15 +1,6 @@
 /* scss/quarks/_fonts.scss */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto|Roboto+Slab');
-
-$font__main: 'Raleway', sans-serif;
-$font__main-bold: 900 'Raleway', sans-serif;
-$font__main-light: 100 'Raleway', sans-serif;
-
-$font__heading: 'Roboto Slab', sans-serif;
-$font__heading-bold: 900 'Roboto Slab', sans-serif;
-$font__heading-light: 100 'Roboto Slab', sans-serif;
-
-$font__subheading: 'Roboto', sans-serif;
-$font__subheading-bold: 900 'Roboto', sans-serif;
-$font__subheading-light: 100 'Roboto', sans-serif;
+@import url("https://use.typekit.net/vye6kaz.css");
+ 
+$font__main: "museo-sans", sans-serif;
+$font__rounded: "museo-sans-rounded",sans-serif;
