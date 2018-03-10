@@ -1,5 +1,4 @@
 /* scss/atoms/_foundation.scss */
-
 main {
     > section{
         >header {
@@ -18,5 +17,15 @@ main {
     			}
     		}
         }
+    }
+}
+
+.container {
+    width:100%;
+    max-width:1240px;
+    margin:0 auto;
+    padding:0 3vw;
+    @include bp(viewport_l){
+        padding:0 30px;
     }
 }

@@ -119,6 +119,10 @@ function mamaterra_scripts() {
 	/* SCRIPTS */
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/styles/js/min/main.min.js', array(), '20151215', false );
+	
+	/* GOOGLE MAPS */
+	wp_enqueue_script( 'google-map', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB56qVlkV7sZU7VfDls6ZBmX8OX9kadiPs', array(), '20151215', false );
+
 }
 add_action( 'wp_enqueue_scripts', 'mamaterra_scripts' );
 
@@ -179,4 +183,12 @@ function hook_fav() {
     <?php
 }
 add_action('wp_head', 'hook_fav');
+
+
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyB56qVlkV7sZU7VfDls6ZBmX8OX9kadiPs');
+}
+
+add_action('acf/init', 'my_acf_init');
 

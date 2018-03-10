@@ -275,7 +275,7 @@ body {
   font-family: "museo-sans", sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #4C4532; }
 
 .wt100 {
@@ -314,6 +314,9 @@ p {
 
 p.lg {
   font-size: 1.8rem; }
+
+p.sm, small {
+  font-size: 1.2rem; }
 
 .center-text {
   text-align: center; }
@@ -1508,6 +1511,15 @@ main > section > header {
       main > section > header h1 {
         font-size: 84px; } }
 
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 3vw; }
+  @media only screen and (min-width: 1000px) {
+    .container {
+      padding: 0 30px; } }
+
 /* scss/atoms/_general-helpers.scss */
 ul.no-bullets {
   list-style-type: none; }
@@ -1866,8 +1878,44 @@ footer#colophon {
   footer#colophon a {
     color: #F7F6F4; }
   footer#colophon .site-info {
+    font-size: 1.2rem;
+    color: #9A8E6C;
     padding: 10px;
     text-align: center; }
+
+.location {
+  height: 350px;
+  position: relative; }
+  .location .acf-map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+  .location .map-overlay > div {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    background: RGBA(174, 213, 123, 0.85);
+    padding: 30px 2vw; }
+    .location .map-overlay > div ul {
+      list-style-type: none;
+      margin-left: 24px; }
+      .location .map-overlay > div ul li {
+        margin-bottom: 20px;
+        position: relative; }
+        .location .map-overlay > div ul li svg {
+          position: absolute;
+          left: -24px;
+          top: 3px; }
+        .location .map-overlay > div ul li p {
+          font-weight: 700;
+          margin: 0; }
+        .location .map-overlay > div ul li small {
+          font-weight: 300;
+          font-size: 1.4rem;
+          display: block; }
+        .location .map-overlay > div ul li a {
+          color: #4C4532; }
 
 /* scss/organisms/_fullscreen-hero.scss */
 .hero {
@@ -1897,7 +1945,7 @@ header#masthead {
   position: relative;
   background-color: #fff;
   width: 100%;
-  padding: 0 .75em;
+  padding: 0 3vw;
   z-index: 99;
   margin: 0;
   -webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);

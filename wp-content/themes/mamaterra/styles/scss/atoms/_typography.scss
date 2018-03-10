@@ -1,6 +1,6 @@
 /* scss/atoms/_typography.scss */
 
-body {font-family:$font__main;font-weight:300;line-height:1.5;font-size:1.8rem;color: $text}
+body {font-family:$font__main;font-weight:300;line-height:1.5;font-size:1.6rem;color: $text}
 
 .wt100 {font-weight:100;}
 .wt300 {font-weight:300;}
@@ -17,6 +17,7 @@ h4 {font-size:2.2rem;}
 
 p {margin:1em 0;max-width:900px;}
 p.lg {font-size:1.8rem;}
+p.sm, small {font-size:1.2rem;}
 
 .center-text{text-align:center;}
 .left-text{text-align:left;}
@@ -24,3 +25,4 @@ p.lg {font-size:1.8rem;}
 .justify-text{text-align:justify;}
 
 .rounded {font-family:$font__rounded;}
+

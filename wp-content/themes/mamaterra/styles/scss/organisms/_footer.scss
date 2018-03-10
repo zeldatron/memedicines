@@ -20,5 +20,48 @@ footer#colophon {
   a {
       color: $light;
   }
-  .site-info { padding: 10px;text-align:center;}
+  .site-info { font-size:1.2rem;color:$md-brown;padding: 10px;text-align:center;}
+}
+
+.location {
+    height:350px;
+    position:relative;
+	.acf-map {
+		height:100%;
+		width:100%;
+		position:absolute;
+		z-index:1;
+	}
+	
+	.map-overlay > div {
+		height:100%;
+        position:relative;
+		z-index:10;
+		background: RGBA(174, 213, 123, .85);
+		padding:30px 2vw;
+		ul {
+			list-style-type:none;
+			margin-left:24px;
+			li {
+			    margin-bottom:20px;
+			    position:relative;
+			    svg {
+			        position:absolute;
+			        left:-24px;
+			        top: 3px;
+			    }
+			    p {
+				    font-weight:700;
+				    margin:0;
+				    
+			    }
+			    small {
+				    font-weight:300;
+				    font-size:1.4rem;
+				    display:block;
+				}
+				a {color: $dk-brown;}
+			}
+		}
+	}
 }
