@@ -14,3 +14,9 @@ background: -moz-radial-gradient(center, ellipse cover, #ffffff 25%, #ffffff 25%
 background: -webkit-radial-gradient(center, ellipse cover, #ffffff 25%,#ffffff 25%,#dfecb9 100%); /* Chrome10-25,Safari5.1-6 */
 background: radial-gradient(ellipse at center, #ffffff 25%,#ffffff 25%,#dfecb9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+.gradient-dark {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#254604+0,100e10+100&0.8+0,1+100 */
+background: -moz-linear-gradient(top, rgba(37,70,4,0.8) 0%, rgba(16,14,16,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(37,70,4,0.8) 0%,rgba(16,14,16,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(37,70,4,0.8) 0%,rgba(16,14,16,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

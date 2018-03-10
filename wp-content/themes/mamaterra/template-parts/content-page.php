@@ -10,42 +10,23 @@
 ?>
 
 <main id="main" <?php post_class('site-main'); ?>>
-
+<?php
+	if(!get_field('no_header')):
+?>	
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
+<?php
+	endif;
+?>
 
-	<div class="entry-content">
-		<?php
-			the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mamaterra' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+<?php
+	if(get_field('page_blocks')):
+	    get_template_part( 'template-parts/layout-blocks' );
+	else: 
+		echo get_field('default_content');
+	endif;
+?>
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-				edit_post_link(
-					sprintf(
-						wp_kses(
-							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'mamaterra' ),
-							array(
-								'span' => array(
-									'class' => array(),
-								),
-							)
-						),
-						get_the_title()
-					),
-					'<span class="edit-link">',
-					'</span>'
-				);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
 </main><!-- #post-<?php the_ID(); ?> -->

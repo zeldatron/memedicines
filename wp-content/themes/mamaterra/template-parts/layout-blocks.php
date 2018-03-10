@@ -1,7 +1,7 @@
 <?php
 
 // check if the flexible content field has rows of data
-if( have_rows('content_blocks') ):
+if( have_rows('content_blocks')):
 
      // loop through the rows of data
     while ( have_rows('content_blocks') ) : the_row();
@@ -25,7 +25,7 @@ if( have_rows('content_blocks') ):
         	get_template_part( 'styles/components/content_blocks/5-x-7-row' );
         	
         //Free Form
-        elseif( get_row_layout() == 'freeform' ): 
+        elseif( get_row_layout() == 'free-form' ): 
         	get_template_part( 'styles/components/content_blocks/freeform' );
         
         else: get_template_part( 'content-none' );
@@ -33,18 +33,6 @@ if( have_rows('content_blocks') ):
         endif;
 
     endwhile;
-    
-    /* Press	
-        elseif( get_field('press_release') || get_field('press_year') || get_field('media_gallery') || get_field('contact_content') ):
-        	get_template_part( 'template-parts/content-press' );
-    // Tech Specs
-        elseif( get_field('table') ):
-        	get_template_part( 'template-parts/content-techspecs' );
-        	
-        else: get_template_part( 'template-parts/content-page' );*/
-
-
-
 endif;
 
 ?>

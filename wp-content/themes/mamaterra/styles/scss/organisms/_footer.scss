@@ -26,7 +26,7 @@ footer#colophon {
 .location {
     position:relative;
     @include bp(viewport_s){
-        height:350px;
+        height:320px;
     }
 	.acf-map {
 		height:150px;
@@ -41,6 +41,7 @@ footer#colophon {
 	
 	.map-overlay {
 		background: RGB(174, 213, 123);
+		height:100%;
 		@include bp(viewport_s){
 	        background:transparent;    
 	    }

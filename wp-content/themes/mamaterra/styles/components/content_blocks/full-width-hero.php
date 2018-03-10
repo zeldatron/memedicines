@@ -5,11 +5,11 @@
  	$section_class = "";
  	$heading = "";
  	$text = "";
+ 	$section_class = "";
+ 	$is_id = false;
 	if( get_sub_field('section_class') ):
 		$section_class = get_sub_field('section_class'); 
-		if( get_sub_field('section_id') ):
-			$section_class = 'id="'.$section_class;
-		endif;
+		$is_id = get_sub_field('section_id');
 	endif;
 	
 	//content type
@@ -70,12 +70,22 @@
 	endwhile;endif;
  ?>
 	
-<?php if( $content_type == 'carousel' ): ?>
-<section class="hero full-width-hero-carousel <?php echo $content_type; ?>">
+<?php if( $content_type == 'carousel' ): 
+
+$section_classes = "hero full-width-hero-carousel";
+if($is_id){
+	$attrs = 'class="' . $section_classes . '" id="' . $section_class . '"';
+} else {
+	$attrs = 'class="' . $section_classes .' ' . $section_class . '"';
+}
+
+?>
+<section <?php echo $attrs; ?>>
 	
-	
-	<?php if( have_rows('carousel') ): while( have_rows('carousel') ): the_row(); 
-		if( have_rows('slide') ): while( have_rows('slide') ): the_row();
+<?php 
+
+if( have_rows('carousel') ): while( have_rows('carousel') ): the_row(); 
+    if( have_rows('slide') ): while( have_rows('slide') ): the_row();
 		
 		$slide_content_type = get_sub_field('slide_content_type');
 		if( $slide_content_type == 'image' ):
@@ -109,16 +119,16 @@
 	
 	
 	
-	<article class="slide <?php echo $slide_content_type." ".$section_class; ?>">
+	<article class="slide <?php echo $slide_content_type; ?>"  style="background: url('<?php echo $url; ?>') no-repeat center center;height:100vh">
 		<div>
-		<?php echo $background_image; ?>
 		<?php echo $background_video;?>
 		</div>
 	</article>
-<?php endwhile;endif;
-	endwhile;endif; ?>
+<?php 
+    endwhile;endif;
+endwhile;endif; 
+?>
 </section>
-
 <?php else: ?>
 <section class="hero <?php echo $content_type." ".$section_class; ?>" <?php echo $background; ?>>
 	<?php if( get_sub_field('background_video') ):

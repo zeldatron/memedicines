@@ -10,14 +10,34 @@ main {
     			color: #fff;
     			margin: 0;
     			font-weight: normal;
-    			letter-spacing: 2px;
+    			letter-spacing: 1px;
     			padding: 3px 5px 6px;
     			@media (min-width: 1000px) {
-    				font-size: 84px;
+    				font-size: 6rem;
     			}
     		}
         }
     }
+}
+
+#primary main {
+    padding-top:90px;
+	> section {
+	    position:relative;
+        padding-top: 2em;
+        padding-bottom:2em; 
+	    &.no-padding {
+	        padding-top: 0;
+	        padding-bottom: 0; 
+	    }
+	    &.full-width {
+		    .container {
+			   max-width:1000000px !important;	
+			   padding-left: 0;
+			   padding-right: 0;
+		    }
+	    }
+	}
 }
 
 .container {
@@ -28,4 +48,5 @@ main {
     @include bp(viewport_l){
         padding:0 30px;
     }
-}
+}   
+

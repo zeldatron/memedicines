@@ -1505,11 +1505,25 @@ main > section > header {
     color: #fff;
     margin: 0;
     font-weight: normal;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 3px 5px 6px; }
     @media (min-width: 1000px) {
       main > section > header h1 {
-        font-size: 84px; } }
+        font-size: 6rem; } }
+
+#primary main {
+  padding-top: 90px; }
+  #primary main > section {
+    position: relative;
+    padding-top: 2em;
+    padding-bottom: 2em; }
+    #primary main > section.no-padding {
+      padding-top: 0;
+      padding-bottom: 0; }
+    #primary main > section.full-width .container {
+      max-width: 1000000px !important;
+      padding-left: 0;
+      padding-right: 0; }
 
 .container {
   width: 100%;
@@ -1557,6 +1571,15 @@ ul.no-bullets {
   background: -webkit-radial-gradient(center, ellipse cover, #ffffff 25%, #ffffff 25%, #dfecb9 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center, #ffffff 25%, #ffffff 25%, #dfecb9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.gradient-dark {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#254604+0,100e10+100&0.8+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(37, 70, 4, 0.8) 0%, #100e10 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(37, 70, 4, 0.8) 0%, #100e10 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(37, 70, 4, 0.8) 0%, #100e10 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
 /* scss/molecules/_accordion.scss */
@@ -1887,7 +1910,7 @@ footer#colophon {
   position: relative; }
   @media only screen and (min-width: 550px) {
     .location {
-      height: 350px; } }
+      height: 320px; } }
   .location .acf-map {
     height: 150px;
     width: 100%;
@@ -1898,7 +1921,8 @@ footer#colophon {
         height: 100%;
         position: absolute; } }
   .location .map-overlay {
-    background: RGB(174, 213, 123); }
+    background: RGB(174, 213, 123);
+    height: 100%; }
     @media only screen and (min-width: 550px) {
       .location .map-overlay {
         background: transparent; } }
@@ -2602,18 +2626,3 @@ body.admin-bar header#masthead {
   width: 90%; }
 
 /* scss/content_blocks/_freeform.scss */
-.free-form > header {
-  background: #46B095; }
-  .free-form > header h1 {
-    font-size: 8.4vw;
-    text-align: center;
-    background: url("../img/red-texture.jpg");
-    background-size: cover;
-    color: #fff;
-    margin: 0;
-    font-weight: normal;
-    letter-spacing: 2px;
-    padding: 3px 5px 6px; }
-    @media (min-width: 1000px) {
-      .free-form > header h1 {
-        font-size: 8.4rem; } }
