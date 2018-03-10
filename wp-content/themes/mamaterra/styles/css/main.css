@@ -1916,6 +1916,9 @@ footer#colophon {
           display: block; }
         .location .map-overlay > div ul li a {
           color: #4C4532; }
+          .location .map-overlay > div ul li a:hover {
+            color: #fff;
+            text-decoration: none; }
 
 /* scss/organisms/_fullscreen-hero.scss */
 .hero {

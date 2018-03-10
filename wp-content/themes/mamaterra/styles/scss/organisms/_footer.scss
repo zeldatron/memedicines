@@ -60,7 +60,9 @@ footer#colophon {
 				    font-size:1.4rem;
 				    display:block;
 				}
-				a {color: $dk-brown;}
+				a {color: $dk-brown;
+					&:hover {color: $white;text-decoration:none;}
+				}
 			}
 		}
 	}

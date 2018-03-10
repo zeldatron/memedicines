@@ -7,12 +7,12 @@
             zoom		: 16,
             center		: new google.maps.LatLng(0, 0),
             mapTypeId	: google.maps.MapTypeId.ROADMAP,
-            scrollwheel	: false,
-            draggable: false,
+            scrollwheel	: true,
+            draggable: true,
             streetViewControl : false,
-            zoomControl : false,
+            zoomControl : true,
             mapTypeControl: false,
-            cursor: 'pointer'
+            draggableCursor: 'move'
         };
 
 

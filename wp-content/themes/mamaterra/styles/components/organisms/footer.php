@@ -18,7 +18,7 @@ $address = explode(',', $location['address']);
             <ul>
                 <li>
                     <i class="fa fa-map-marker-alt"></i>
-                    <p><?php echo str_replace(",","<br />",$location['address']); ?></p>
+                    <p><a href="https://www.google.com/maps/place/<?php echo $location['address']; ?>" target="_blank"><?php echo str_replace(",","<br />",$location['address']); ?></a></p>
                     <small>(corner of 8th & Riverside)</small>
                 </li>
                 <li>
