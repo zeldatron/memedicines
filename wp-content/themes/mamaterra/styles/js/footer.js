@@ -66,11 +66,23 @@
     }
 
     function add_marker( $marker, map ) {
-       var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+        var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+        
+         var image = {
+          url: "/wp-content/themes/mamaterra/styles/img/leaf.png",
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(61, 70),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(40, 35)
+        };
+        
+        
         var marker = new google.maps.Marker({
             position	: latlng,
-            map			: map,
-            //visible: false
+            icon 		: image,
+            map			: map
         });
 
          map.markers.push( marker );

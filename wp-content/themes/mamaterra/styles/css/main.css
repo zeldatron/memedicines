@@ -1481,14 +1481,14 @@ p.sm, small {
 
 /* scss/atoms/_links.scss */
 a, a:visited {
-  color: #46B095;
+  color: #77B43D;
   text-decoration: none;
   transition: all .35s; }
   a:hover, a.hover, a:visited:hover, a:visited.hover {
     text-decoration: underline;
     color: #000; }
   a.underline, a p.a, a:visited.underline, a:visited p.a {
-    border-bottom: 2px solid #46B095;
+    border-bottom: 2px solid #77B43D;
     color: #4C4532; }
     a.underline:hover, a.underline.hover, a p.a:hover, a p.a.hover, a:visited.underline:hover, a:visited.underline.hover, a:visited p.a:hover, a:visited p.a.hover {
       background-color: #AEE9DA;
@@ -1497,7 +1497,7 @@ a, a:visited {
 
 /* scss/atoms/_foundation.scss */
 main > section > header {
-  background: #46B095; }
+  background: #77B43D; }
   main > section > header h1 {
     font-size: 8.4vw;
     text-align: center;
@@ -2308,7 +2308,7 @@ body.admin-bar header#masthead {
   .five-seven-row .row section.col-lg-7 > div {
     background-color: #fff;
     padding: 2rem;
-    border: 4px solid #46B095;
+    border: 4px solid #77B43D;
     border-top: 0;
     height: 100%;
     box-sizing: border-box; }
@@ -2318,10 +2318,10 @@ body.admin-bar header#masthead {
     @media only screen and (min-width: 1000px) {
       .five-seven-row .row section.col-lg-7 > div {
         border-left: 0;
-        border-top: 4px solid #46B095; } }
+        border-top: 4px solid #77B43D; } }
     .five-seven-row .row section.col-lg-7 > div header h1 {
       font-weight: bold;
-      color: #46B095;
+      color: #77B43D;
       font-size: 3.5rem; }
       @media only screen and (min-width: 750px) {
         .five-seven-row .row section.col-lg-7 > div header h1 {
@@ -2370,7 +2370,7 @@ body.admin-bar header#masthead {
         padding: 2rem; } }
     .five-seven-row.v2 .row .col-lg-5 h1 {
       font-weight: bold;
-      color: #46B095;
+      color: #77B43D;
       font-size: 3rem;
       text-align: right;
       line-height: 1.2; }
@@ -2469,7 +2469,7 @@ body.admin-bar header#masthead {
 
 /* scss/content-blocks/_column-grid.scss */
 .hover-link-grid header {
-  background: #46B095; }
+  background: #77B43D; }
   .hover-link-grid header h1 {
     font-size: 8.4vw;
     text-align: center;
@@ -2524,7 +2524,7 @@ body.admin-bar header#masthead {
     transition: transform .25s ease-in-out; }
 
 .column-grid header h1 {
-  background: #46B095;
+  background: #77B43D;
   font-size: 8.4vw;
   text-align: center;
   background-size: cover;
@@ -2540,7 +2540,7 @@ body.admin-bar header#masthead {
 .column-grid .row article h2 {
   font-size: 30px;
   text-align: left;
-  color: #46B095;
+  color: #77B43D;
   margin-bottom: 10px; }
 
 .column-grid .row article .header {
@@ -2551,7 +2551,7 @@ body.admin-bar header#masthead {
 
 .column-grid .row article .subheader {
   font-family: "museo-sans", sans-serif;
-  color: #46B095;
+  color: #77B43D;
   font-size: 25px;
   display: block; }
 
