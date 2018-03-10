@@ -5,7 +5,7 @@ header#masthead {
     position: relative;
     background-color: $white;
     width: 100%;
-    padding: 10px 3vw;
+    padding: 10px .75em;
     z-index: 99;    
     margin: 0;
     -webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
@@ -13,6 +13,8 @@ header#masthead {
     box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
     @include bp(viewport_m){
       position: fixed;
+    }
+    @include bp(viewport_l){
       top: 0;
       padding: 10px 30px;
     }
@@ -27,13 +29,15 @@ header#masthead {
         
         svg {
             z-index: 30;
-            margin-top: 9px;
-            font-size: 30px;
+            margin-top: 14px;
+            font-size: 2.2rem;
             float:right;
             position:relative;
-            @include bp(viewport_m){
-                margin-top: 25px;
+            @include bp(viewport_l){
+                font-size: 3rem;
+                margin-top: 23px;
             }
+            
         }
         svg.fa-bars {
           display: inline-block;
@@ -70,7 +74,7 @@ header#masthead {
             img {
                 width: auto;
                 max-height: 50px;
-                @include bp(viewport_m){
+                @include bp(viewport_l){
                     max-height: 80px;
                 }
             }
@@ -82,14 +86,6 @@ header#masthead {
                     width: 0;
                     overflow: hidden;
                     transform: translateY(-9999px);
-                }
-                .logo {
-                    max-height: 50px;
-                    width: auto;
-                    position: relative;
-                    @include bp(viewport_m){
-                        max-height: 80px;
-                    }
                 }
             }
         }  
@@ -108,8 +104,6 @@ header#masthead {
       @include bp(viewport_l){
            display:block;
       }
-
-
     }
     input[type=checkbox]:checked ~ .menu-main-menu-container {
       display: block;
@@ -132,13 +126,13 @@ header#masthead {
     .menu-main-menu-container {
     	text-align: left;
     	ul{
-            margin: 12vw 2vw;
+            margin: 3em .75em .75em .75em;
             list-style-type:none;
-            @media (min-width: 750px) {
-                margin: 30px 0 0 0;
+            @include bp(viewport_l){
+                margin: 25px 0 0 0;
             }
             li {
-                margin-top: 4vw;
+                margin-top: .5em;
                 font-family: $font__main;
                 font-weight: 500;
                 font-size:2.4rem;
@@ -146,15 +140,23 @@ header#masthead {
                 letter-spacing:1px;
                 text-align:right;
                  @include bp(viewport_l){
-                    margin: 0 10px;
+                    margin: 0;
                     float:left;
                     font-size:1.3rem;
+                    
                 }
                 a {
                     color: $white;
                     text-decoration: none;
                      @include bp(viewport_l){
-                     color: $green;
+	                     display:block;
+	                     padding:5px 10px;
+	                     border-radius:3rem;
+	                     color: $green;
+	                     &:hover {
+	                         color: $dk-brown;
+	                         background:$minty-fresh;
+	                     }
                      }
                 }
                 
@@ -163,7 +165,11 @@ header#masthead {
 	                font-weight:500;
                      @include bp(viewport_l){
                      color: $md-brown;
-                     }
+ 	                     &:hover {
+	                         color: $md-brown;
+	                         background:transparent;
+	                     }
+                      }
                 }
             }
     	}

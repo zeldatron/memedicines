@@ -1897,7 +1897,7 @@ header#masthead {
   position: relative;
   background-color: #fff;
   width: 100%;
-  padding: 10px 3vw;
+  padding: 10px .75em;
   z-index: 99;
   margin: 0;
   -webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
@@ -1905,7 +1905,9 @@ header#masthead {
   box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08); }
   @media only screen and (min-width: 750px) {
     header#masthead {
-      position: fixed;
+      position: fixed; } }
+  @media only screen and (min-width: 1000px) {
+    header#masthead {
       top: 0;
       padding: 10px 30px; } }
   header#masthead nav#site-navigation {
@@ -1915,13 +1917,14 @@ header#masthead {
     display: none; }
   header#masthead .show-menu svg {
     z-index: 30;
-    margin-top: 9px;
-    font-size: 30px;
+    margin-top: 14px;
+    font-size: 2.2rem;
     float: right;
     position: relative; }
-    @media only screen and (min-width: 750px) {
+    @media only screen and (min-width: 1000px) {
       header#masthead .show-menu svg {
-        margin-top: 25px; } }
+        font-size: 3rem;
+        margin-top: 23px; } }
   header#masthead .show-menu svg.fa-bars {
     display: inline-block;
     opacity: 1; }
@@ -1947,7 +1950,7 @@ header#masthead {
     header#masthead .site-branding .site-title img {
       width: auto;
       max-height: 50px; }
-      @media only screen and (min-width: 750px) {
+      @media only screen and (min-width: 1000px) {
         header#masthead .site-branding .site-title img {
           max-height: 80px; } }
     header#masthead .site-branding .site-title a {
@@ -1958,13 +1961,6 @@ header#masthead {
         width: 0;
         overflow: hidden;
         transform: translateY(-9999px); }
-      header#masthead .site-branding .site-title a .logo {
-        max-height: 50px;
-        width: auto;
-        position: relative; }
-        @media only screen and (min-width: 750px) {
-          header#masthead .site-branding .site-title a .logo {
-            max-height: 80px; } }
   header#masthead .social-navigation {
     text-align: right; }
   header#masthead .social-navigation a {
@@ -1995,13 +1991,13 @@ header#masthead {
   header#masthead .menu-main-menu-container {
     text-align: left; }
     header#masthead .menu-main-menu-container ul {
-      margin: 12vw 2vw;
+      margin: 3em .75em .75em .75em;
       list-style-type: none; }
-      @media (min-width: 750px) {
+      @media only screen and (min-width: 1000px) {
         header#masthead .menu-main-menu-container ul {
-          margin: 30px 0 0 0; } }
+          margin: 25px 0 0 0; } }
       header#masthead .menu-main-menu-container ul li {
-        margin-top: 4vw;
+        margin-top: .5em;
         font-family: "museo-sans", sans-serif;
         font-weight: 500;
         font-size: 2.4rem;
@@ -2010,7 +2006,7 @@ header#masthead {
         text-align: right; }
         @media only screen and (min-width: 1000px) {
           header#masthead .menu-main-menu-container ul li {
-            margin: 0 10px;
+            margin: 0;
             float: left;
             font-size: 1.3rem; } }
         header#masthead .menu-main-menu-container ul li a {
@@ -2018,13 +2014,22 @@ header#masthead {
           text-decoration: none; }
           @media only screen and (min-width: 1000px) {
             header#masthead .menu-main-menu-container ul li a {
-              color: #77B43D; } }
+              display: block;
+              padding: 5px 10px;
+              border-radius: 3rem;
+              color: #77B43D; }
+              header#masthead .menu-main-menu-container ul li a:hover {
+                color: #4C4532;
+                background: #F3F7E7; } }
         header#masthead .menu-main-menu-container ul li.non-active a {
           color: #F7F6F4;
           font-weight: 500; }
           @media only screen and (min-width: 1000px) {
             header#masthead .menu-main-menu-container ul li.non-active a {
-              color: #9A8E6C; } }
+              color: #9A8E6C; }
+              header#masthead .menu-main-menu-container ul li.non-active a:hover {
+                color: #9A8E6C;
+                background: transparent; } }
   header#masthead .menu-social-media-container {
     padding-right: 2vw; }
     header#masthead .menu-social-media-container #social-links li {
