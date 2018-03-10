@@ -205,7 +205,7 @@
         "description": "",
         "backgroundColor": "",
         "order": -28,
-        "has_js": "false"
+        "has_js": "true"
     },
     {
         "component": "column",

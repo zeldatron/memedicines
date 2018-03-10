@@ -5,7 +5,7 @@ header#masthead {
     position: relative;
     background-color: $white;
     width: 100%;
-    padding: 10px .75em;
+    padding: 0 .75em;
     z-index: 99;    
     margin: 0;
     -webkit-box-shadow: 0 5px 11px 0 rgba(50, 50, 50, 0.08);
@@ -16,7 +16,7 @@ header#masthead {
     }
     @include bp(viewport_l){
       top: 0;
-      padding: 10px 30px;
+      padding: 0 20px 0 30px;
     }
     nav#site-navigation {
       float: right;
@@ -29,13 +29,12 @@ header#masthead {
         
         svg {
             z-index: 30;
-            margin-top: 14px;
+            margin-top: 23px;
             font-size: 2.2rem;
             float:right;
             position:relative;
             @include bp(viewport_l){
                 font-size: 3rem;
-                margin-top: 23px;
             }
             
         }
@@ -47,10 +46,9 @@ header#masthead {
           display: inline-block;
           opacity: 0;
           position:relative;
-          left:25px;
+          left:20px;
 
         }
-        
         @include bp(viewport_l){
             display:none;
         }
@@ -67,7 +65,7 @@ header#masthead {
     }
     .site-branding{
         .site-title {
-            margin: 0 auto;
+            margin: 10px 0;
             float:left;
             line-height: 0;
             display: inline-block;
@@ -75,7 +73,7 @@ header#masthead {
                 width: auto;
                 max-height: 50px;
                 @include bp(viewport_l){
-                    max-height: 80px;
+                    max-height: 70px;
                 }
             }
             a {
@@ -129,7 +127,7 @@ header#masthead {
             margin: 3em .75em .75em .75em;
             list-style-type:none;
             @include bp(viewport_l){
-                margin: 25px 0 0 0;
+                margin:0;
             }
             li {
                 margin-top: .5em;
@@ -149,10 +147,12 @@ header#masthead {
                     color: $white;
                     text-decoration: none;
                      @include bp(viewport_l){
-	                     display:block;
-	                     padding:5px 10px;
-	                     border-radius:3rem;
+	                     display:table-cell;
+	                     vertical-align:middle;
+	                     padding:0 10px;
+	                     height: 90px;
 	                     color: $green;
+	                     transition:all .5s;
 	                     &:hover {
 	                         color: $dk-brown;
 	                         background:$minty-fresh;
@@ -189,7 +189,15 @@ header#masthead {
 
 //scrolled up height
 body.scrolled {
-	
+	header#masthead {
+		.site-branding .site-title {
+		    margin:3px 0;
+		    transition: margin .5s;
+		    img { max-height: 44px; transition: max-height .5s;}
+		 }
+		
+		.menu-main-menu-container ul li a { height: 50px;}
+	}
 }
 
 
