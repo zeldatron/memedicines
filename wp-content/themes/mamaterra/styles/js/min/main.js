@@ -178,7 +178,7 @@ $(window).resize(function(){
     }
 
     function recenter_map( map ) {
-        if($(window).width() <= 750) {
+        if($(window).width() <= 750 && $(window).width() > 550 ) {
 	        var offsety = 0;
 	        var offsetx = 100;
 	        var latlng =  map.getCenter();
