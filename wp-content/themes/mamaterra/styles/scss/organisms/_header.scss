@@ -133,29 +133,42 @@ header#masthead {
                 margin-top: .5em;
                 font-family: $font__main;
                 font-weight: 500;
-                font-size:2.4rem;
+                font-size:2rem;
                 text-transform: uppercase;
                 letter-spacing:1px;
                 text-align:right;
-                 @include bp(viewport_l){
+                position:relative;
+               
+
+                @include bp(viewport_l){
+                    height: 90px;
                     margin: 0;
                     float:left;
-                    font-size:1.3rem;
-                    
+                    font-size:1.3rem;                    
                 }
+                
+                &:hover {
+                    @include bp(viewport_l){
+                        background:$minty-fresh;
+	                    ul.sub-menu {
+						    top:75%;
+							left: 50% !important;
+	                    }
+	                }
+                }
+
                 a {
                     color: $white;
                     text-decoration: none;
                      @include bp(viewport_l){
 	                     display:table-cell;
 	                     vertical-align:middle;
-	                     padding:0 10px;
+	                     padding:0 15px;
 	                     height: 90px;
 	                     color: $green;
 	                     transition:all .5s;
 	                     &:hover {
 	                         color: $dk-brown;
-	                         background:$minty-fresh;
 	                     }
                      }
                 }
@@ -171,6 +184,35 @@ header#masthead {
 	                     }
                       }
                 }
+                ul.sub-menu { 
+	                margin-top:0;
+                }
+                @include bp(viewport_l){
+	               ul.sub-menu {
+					    position: absolute;
+					    background: $minty-fresh;
+					    z-index: 999;
+					    margin: 0px;
+					    width: 100%;
+					    min-width:125px;
+					    top: -99999em;
+					    left: -99999em !important;
+					    transform: translateX(-50%);
+					    li {
+						    float:none;
+						    height:auto;
+						    a {
+						        height:auto;
+						        width:100%;
+						        padding:10px 15px;
+						        display:block;
+						        text-align:left;
+						        &:hover {background:$green;color:$white;}
+						    }
+						  
+					    }
+	               }
+	           }
             }
     	}
     }
@@ -196,7 +238,13 @@ body.scrolled {
 		    img { max-height: 44px; transition: max-height .5s;}
 		 }
 		
-		.menu-main-menu-container ul li a { height: 50px;}
+		.menu-main-menu-container ul li {
+		    height: 50px;
+		    a { height: 50px;}
+		    &:hover ul.sub-menu {
+			    top:100%;
+            }
+		}
 	}
 }
 

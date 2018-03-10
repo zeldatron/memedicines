@@ -2061,15 +2061,23 @@ header#masthead {
         margin-top: .5em;
         font-family: "museo-sans", sans-serif;
         font-weight: 500;
-        font-size: 2.4rem;
+        font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 1px;
-        text-align: right; }
+        text-align: right;
+        position: relative; }
         @media only screen and (min-width: 1000px) {
           header#masthead .menu-main-menu-container ul li {
+            height: 90px;
             margin: 0;
             float: left;
             font-size: 1.3rem; } }
+        @media only screen and (min-width: 1000px) {
+          header#masthead .menu-main-menu-container ul li:hover {
+            background: #F3F7E7; }
+            header#masthead .menu-main-menu-container ul li:hover ul.sub-menu {
+              top: 75%;
+              left: 50% !important; } }
         header#masthead .menu-main-menu-container ul li a {
           color: #fff;
           text-decoration: none; }
@@ -2077,13 +2085,12 @@ header#masthead {
             header#masthead .menu-main-menu-container ul li a {
               display: table-cell;
               vertical-align: middle;
-              padding: 0 10px;
+              padding: 0 15px;
               height: 90px;
               color: #77B43D;
               transition: all .5s; }
               header#masthead .menu-main-menu-container ul li a:hover {
-                color: #4C4532;
-                background: #F3F7E7; } }
+                color: #4C4532; } }
         header#masthead .menu-main-menu-container ul li.non-active a {
           color: #F7F6F4;
           font-weight: 500; }
@@ -2093,6 +2100,31 @@ header#masthead {
               header#masthead .menu-main-menu-container ul li.non-active a:hover {
                 color: #9A8E6C;
                 background: transparent; } }
+        header#masthead .menu-main-menu-container ul li ul.sub-menu {
+          margin-top: 0; }
+        @media only screen and (min-width: 1000px) {
+          header#masthead .menu-main-menu-container ul li ul.sub-menu {
+            position: absolute;
+            background: #F3F7E7;
+            z-index: 999;
+            margin: 0px;
+            width: 100%;
+            min-width: 125px;
+            top: -99999em;
+            left: -99999em !important;
+            transform: translateX(-50%); }
+            header#masthead .menu-main-menu-container ul li ul.sub-menu li {
+              float: none;
+              height: auto; }
+              header#masthead .menu-main-menu-container ul li ul.sub-menu li a {
+                height: auto;
+                width: 100%;
+                padding: 10px 15px;
+                display: block;
+                text-align: left; }
+                header#masthead .menu-main-menu-container ul li ul.sub-menu li a:hover {
+                  background: #77B43D;
+                  color: #fff; } }
   header#masthead .menu-social-media-container {
     padding-right: 2vw; }
     header#masthead .menu-social-media-container #social-links li {
@@ -2107,8 +2139,12 @@ body.scrolled header#masthead .site-branding .site-title {
     max-height: 44px;
     transition: max-height .5s; }
 
-body.scrolled header#masthead .menu-main-menu-container ul li a {
+body.scrolled header#masthead .menu-main-menu-container ul li {
   height: 50px; }
+  body.scrolled header#masthead .menu-main-menu-container ul li a {
+    height: 50px; }
+  body.scrolled header#masthead .menu-main-menu-container ul li:hover ul.sub-menu {
+    top: 100%; }
 
 body.admin-bar header#masthead {
   top: 32px; }
