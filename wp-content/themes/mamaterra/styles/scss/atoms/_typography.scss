@@ -1,6 +1,10 @@
 /* scss/atoms/_typography.scss */
 
-body {font-family:$font__main;font-weight:300;line-height:1.5;font-size:1.6rem;color: $text}
+body {font-family:$font__main;font-weight:500;line-height:1.5;font-size:1.6rem;color: $text}
+* {  
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
 
 .wt100 {font-weight:100;}
 .wt300 {font-weight:300;}
@@ -8,12 +12,12 @@ body {font-family:$font__main;font-weight:300;line-height:1.5;font-size:1.6rem;c
 .wt700 {font-weight:700;}
 .wt900 {font-weight:900;}
 
-h1, h2, h3, h4 {font-weight:700;}
+h1, h2, h3, h4 {font-weight:700;line-height:1.2}
 
-h1 {font-size:6rem;}
-h2 {font-size:4.8rem;}
-h3, p.xxl, .subheader {font-size:3.2rem;}
-h4 {font-size:2.2rem;}
+h1 {font-size:5rem;}
+h2 {font-size:3.6rem;}
+h3, p.xxl, .subheader {font-size:2.4rem;}
+h4 {font-size:1.8rem;}
 
 p {margin:1em 0;max-width:900px;}
 p.lg {font-size:1.8rem;}

@@ -134,8 +134,7 @@ header#masthead {
             }
             li {
                 margin-top: .5em;
-                font-family: $font__main;
-                font-weight: 500;
+                font-weight: 700;
                 font-size:2rem;
                 text-transform: uppercase;
                 letter-spacing:1px;
@@ -178,7 +177,6 @@ header#masthead {
                 
                 &.non-active a {
 	                color: $lt-tan;
-	                font-weight:500;
                      @include bp(viewport_l){
                      color: $md-brown;
  	                     &:hover {
@@ -234,7 +232,7 @@ header#masthead {
 
 //Add padding to content element 
 
-#primary main {
+#primary {
     @include bp(viewport_m){
         padding-top:$mobile-height;
     }

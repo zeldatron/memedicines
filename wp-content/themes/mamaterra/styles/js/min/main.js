@@ -78,7 +78,7 @@ $(window).resize(function(){
             zoom		: 16,
             center		: new google.maps.LatLng(0, 0),
             mapTypeId	: google.maps.MapTypeId.ROADMAP,
-            scrollwheel	: true,
+            scrollwheel	: false,
             draggable: true,
             streetViewControl : false,
             zoomControl : true,
@@ -242,6 +242,18 @@ $(window).resize(function(){
             }
 		 
 		 });
+	 }); //end document ready
+})( jQuery );
+
+/* js/home.js */
+
+(function($) {
+	$(document).ready(function() {
+	    $('.scroll-down').on('click',function(e){
+			$('html, body').animate({
+		    scrollTop: $(".scroll-to-me").offset().top - 50
+		    }, 1000);
+	    });
 	 }); //end document ready
 })( jQuery );
 

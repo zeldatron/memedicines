@@ -365,6 +365,6 @@
         "description": "styles specific to home page",
         "backgroundColor": "",
         "order": -44,
-        "has_js": "false"
+        "has_js": "true"
     }
 ]

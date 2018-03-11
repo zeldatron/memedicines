@@ -13,9 +13,12 @@
 <?php
 	if(!get_field('no_header')):
 ?>	
+	
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
+
+
 <?php
 	endif;
 ?>

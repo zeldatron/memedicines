@@ -16,3 +16,11 @@ ul.no-bullets { list-style-type:none; }
 	z-index:2;
 	opacity:.5;
 }
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.excerpt-dash { display:none; }

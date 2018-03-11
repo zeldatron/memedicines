@@ -18,3 +18,26 @@ a, a:visited {
         }
     }
 }
+
+a.read-more {
+	font-weight:700;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	&:hover {
+		text-decoration:none;
+		&::after {
+		    left:12px;
+		}
+	}
+	
+	&::after{
+		content:'\f061';
+		font-family: 'fontawesome';
+		font-size:1.2rem;
+		display:inline-block;
+		position: relative;
+        top: -2px;
+        left:4px;
+        transition:left .25s;
+	}
+}
