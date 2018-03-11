@@ -21,9 +21,7 @@ main {
 }
 
 #primary main {
-    padding-top:90px;
 	> section {
-	    position:relative;
         padding-top: 2em;
         padding-bottom:2em; 
 	    &.no-padding {

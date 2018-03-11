@@ -1511,19 +1511,16 @@ main > section > header {
       main > section > header h1 {
         font-size: 6rem; } }
 
-#primary main {
-  padding-top: 90px; }
-  #primary main > section {
-    position: relative;
-    padding-top: 2em;
-    padding-bottom: 2em; }
-    #primary main > section.no-padding {
-      padding-top: 0;
-      padding-bottom: 0; }
-    #primary main > section.full-width .container {
-      max-width: 1000000px !important;
-      padding-left: 0;
-      padding-right: 0; }
+#primary main > section {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  #primary main > section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0; }
+  #primary main > section.full-width .container {
+    max-width: 1000000px !important;
+    padding-left: 0;
+    padding-right: 0; }
 
 .container {
   width: 100%;
@@ -1550,6 +1547,15 @@ ul.no-bullets {
 
 * {
   box-sizing: border-box; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: .5; }
 
 /* scss/atoms/_gradient-helpers.scss */
 .gradient-green {
@@ -1981,7 +1987,7 @@ footer#colophon {
 /* scss/organisms/_header.scss */
 header#masthead {
   position: relative;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
   width: 100%;
   padding: 0 3vw;
   z-index: 99;
@@ -2156,19 +2162,29 @@ header#masthead {
       header#masthead .menu-social-media-container #social-links li svg {
         margin-top: 2vw; }
 
-body.scrolled header#masthead .site-branding .site-title {
-  margin: 3px 0;
-  transition: margin .5s; }
-  body.scrolled header#masthead .site-branding .site-title img {
-    max-height: 44px;
-    transition: max-height .5s; }
+@media only screen and (min-width: 750px) {
+  #primary main {
+    padding-top: 70px; } }
 
-body.scrolled header#masthead .menu-main-menu-container ul li {
-  height: 50px; }
-  body.scrolled header#masthead .menu-main-menu-container ul li a {
+@media only screen and (min-width: 1000px) {
+  #primary main {
+    padding-top: 90px; } }
+
+body.scrolled header#masthead {
+  background-color: white;
+  transition: background-color .5s; }
+  body.scrolled header#masthead .site-branding .site-title {
+    margin: 3px 0;
+    transition: margin .5s; }
+    body.scrolled header#masthead .site-branding .site-title img {
+      max-height: 44px;
+      transition: max-height .5s; }
+  body.scrolled header#masthead .menu-main-menu-container ul li {
     height: 50px; }
-  body.scrolled header#masthead .menu-main-menu-container ul li:hover ul.sub-menu {
-    top: 100%; }
+    body.scrolled header#masthead .menu-main-menu-container ul li a {
+      height: 50px; }
+    body.scrolled header#masthead .menu-main-menu-container ul li:hover ul.sub-menu {
+      top: 100%; }
 
 body.admin-bar header#masthead {
   top: 32px; }
@@ -2219,6 +2235,69 @@ body.admin-bar header#masthead {
     font-size: 8rem; }
   .page-template-page-template-landing .hero.header header .subheadline {
     font-size: 5rem; } }
+
+/* scss/pages/_home.scss */
+.home .fixed-splash {
+  position: absolute;
+  width: 100%;
+  max-height: 75vw;
+  overflow: hidden;
+  z-index: -1; }
+  @media only screen and (min-width: 750px) {
+    .home .fixed-splash {
+      position: fixed;
+      max-height: 100vh;
+      top: 0px; } }
+
+.home .splash-overlay {
+  position: relative;
+  height: 75vw;
+  width: 100%;
+  text-align: center;
+  overflow: hidden; }
+  @media only screen and (min-width: 750px) {
+    .home .splash-overlay {
+      height: calc(75vw - 70px);
+      min-height: 400px; } }
+  @media only screen and (min-width: 1000px) {
+    .home .splash-overlay {
+      max-height: calc(100vh - 90px);
+      height: calc(100vh - 90px); } }
+  .home .splash-overlay img {
+    max-height: 62vw;
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 5%;
+    -webkit-filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.4)); }
+    @media only screen and (min-width: 750px) {
+      .home .splash-overlay img {
+        min-height: 300px;
+        max-height: calc(75vw - 180px); } }
+    @media only screen and (min-width: 1000px) {
+      .home .splash-overlay img {
+        max-height: calc(100vh - 220px); } }
+    @media only screen and (min-width: 750px) {
+      .home .splash-overlay img {
+        margin-top: 3%; } }
+
+.home .scroll-down {
+  display: none;
+  text-indent: -9999px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  background: url(/wp-content/uploads/2018/03/next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+  @media only screen and (min-width: 750px) {
+    .home .scroll-down {
+      display: block; } }
 
 /* scss/scripts/_equalheightelements.scss */
 .equalheightcontainer article {

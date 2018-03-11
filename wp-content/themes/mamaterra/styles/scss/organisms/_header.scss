@@ -1,9 +1,12 @@
 /* scss/organisms/_header.scss */
 
+$full-height: 90px;
+$scrolled-height: 50px;
+$mobile-height: 70px;
 
 header#masthead {
     position: relative;
-    background-color: $white;
+    background-color: rgba(255,255,255,.85);
     width: 100%;
     padding: 0 3vw;
     z-index: 99;    
@@ -141,7 +144,7 @@ header#masthead {
                
 
                 @include bp(viewport_l){
-                    height: 90px;
+                    height: $full-height;
                     margin: 0;
                     float:left;
                     font-size:1.3rem;                    
@@ -164,7 +167,7 @@ header#masthead {
 	                     display:table-cell;
 	                     vertical-align:middle;
 	                     padding:0 15px;
-	                     height: 90px;
+	                     height: $full-height;
 	                     color: $green;
 	                     transition:all .5s;
 	                     &:hover {
@@ -229,9 +232,24 @@ header#masthead {
     }
 }
 
+//Add padding to content element 
+
+#primary main {
+    @include bp(viewport_m){
+        padding-top:$mobile-height;
+    }
+   
+    @include bp(viewport_l){
+        padding-top:$full-height;
+    }
+}
+
+
 //scrolled up height
 body.scrolled {
 	header#masthead {
+	     background-color: rgba(255,255,255,1);
+         transition: background-color .5s;
 		.site-branding .site-title {
 		    margin:3px 0;
 		    transition: margin .5s;

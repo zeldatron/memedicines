@@ -358,5 +358,13 @@
         "backgroundColor": "",
         "order": -43,
         "has_js": "false"
+    },
+    {
+        "component": "home",
+        "category": "pages",
+        "description": "styles specific to home page",
+        "backgroundColor": "",
+        "order": -44,
+        "has_js": "false"
     }
 ]

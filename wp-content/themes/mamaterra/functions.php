@@ -6,7 +6,6 @@
  *
  * @package mamaterra
  */
-
 if ( ! function_exists( 'mamaterra_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -184,11 +183,30 @@ function hook_fav() {
 }
 add_action('wp_head', 'hook_fav');
 
-
+/**
+ * Add ACF Google maps API key
+ */
 function my_acf_init() {
 	
 	acf_update_setting('google_api_key', 'AIzaSyB56qVlkV7sZU7VfDls6ZBmX8OX9kadiPs');
 }
 
 add_action('acf/init', 'my_acf_init');
+
+
+/**
+ * Add SVG Mime type to media upload permissions */
+ 
+function my_custom_upload_mimes($mimes = array()) {
+	// Add a key and value for the CSV file type
+	$mimes['svg'] = "image/svg+xml";
+	return $mimes;
+}
+
+add_action('upload_mimes', 'my_custom_upload_mimes');
+
+//get rid of those stupid fucking P tags that WP shits everywhere
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+remove_filter ('acf_the_content', 'wpautop');
 
