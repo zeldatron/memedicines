@@ -1,1 +1,13 @@
 /* scss/organisms/_sidebar.scss */
+
+.widget {
+    margin-bottom:20px;
+	background: $lt-tan;
+	padding:15px;
+	.widget-title{
+		font-size:1.6rem;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		margin-bottom:5px;
+	}
+}

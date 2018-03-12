@@ -9,7 +9,6 @@
 
 ?>
 
-<main id="main" <?php post_class('site-main'); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
@@ -27,4 +26,3 @@
 	<footer class="entry-footer">
 		<?php mamaterra_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
-</main><!-- #post-<?php the_ID(); ?> -->

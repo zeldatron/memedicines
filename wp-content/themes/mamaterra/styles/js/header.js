@@ -5,7 +5,7 @@
 	    
 	    $(window).scroll(function() {
 		    var scrolledHeight = 200;
-		    if ($(window).width() >= 1000) {
+		    if ($(window).width() >= 750) {
                 if ($(window).scrollTop() > scrolledHeight) {
                     $('body').addClass('scrolled');
                 }

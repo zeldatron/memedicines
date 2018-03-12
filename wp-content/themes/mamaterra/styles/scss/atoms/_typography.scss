@@ -15,12 +15,13 @@ body {font-family:$font__main;font-weight:500;line-height:1.5;font-size:1.6rem;c
 h1, h2, h3, h4 {font-weight:700;line-height:1.2}
 
 h1 {font-size:5rem;}
-h2 {font-size:3.6rem;}
-h3, p.xxl, .subheader {font-size:2.4rem;}
+h2 {font-size:4.2rem;}
+h3, .subheader {font-size:2.4rem;}
 h4 {font-size:1.8rem;}
 
 p {margin:1em 0;max-width:900px;}
 p.lg {font-size:1.8rem;}
+p.huge {font-size:2.4rem;margin-top:.5em;margin-bottom:.5em;line-height:1.4}
 p.sm, small {font-size:1.2rem;}
 
 .center-text{text-align:center;}

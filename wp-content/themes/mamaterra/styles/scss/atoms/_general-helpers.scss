@@ -1,6 +1,6 @@
 /* scss/atoms/_general-helpers.scss */
 
-ul.no-bullets { list-style-type:none; }
+
 .center {margin-left:auto;margin-right:auto;}
 .hidden {display:none;}
 .flex {display:flex;}
@@ -23,4 +23,12 @@ ul.no-bullets { list-style-type:none; }
   clear: both;
 }
 
+.text-width {max-width:900px;}
+
+
+/* OVERRIDES */
 .excerpt-dash { display:none; }
+.screen-reader-text { display:none; }
+
+ul {list-style-type: none;}
+.entry-content ul {list-style-type:disc;}

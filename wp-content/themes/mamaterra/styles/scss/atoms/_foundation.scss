@@ -1,26 +1,6 @@
 /* scss/atoms/_foundation.scss */
-main {
-    > section{
-        >header {
-    		background: $pop; 
-    		h1 {
-    			font-size: 8.4vw;
-    			text-align: center;
-    			background-size: cover;
-    			color: #fff;
-    			margin: 0;
-    			font-weight: normal;
-    			letter-spacing: 1px;
-    			padding: 3px 5px 6px;
-    			@media (min-width: 1000px) {
-    				font-size: 6rem;
-    			}
-    		}
-        }
-    }
-}
 
-#primary main {
+.content-area > main {
 	> section {
         padding-top: 1.8em;
         padding-bottom:1.8em; 
@@ -48,6 +28,10 @@ main {
 		    text-align:center;
 	    }
 	}
+	> header.entry-header {
+	    text-align:center;
+	    padding:2em 1em;
+	}
 }
 
 .container {
@@ -58,4 +42,15 @@ main {
     @include bp(viewport_l){
         padding:0 30px;
     }
-}   
+}
+
+.single-post { 
+    header.entry-header {
+	    padding: 4em 0 2em 0;
+    } 
+    
+    .entry-content {
+	    padding-right:5%;
+	    max-width:900px;
+    }  
+}

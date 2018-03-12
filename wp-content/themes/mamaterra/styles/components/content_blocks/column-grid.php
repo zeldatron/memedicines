@@ -17,7 +17,7 @@
 	$heading = get_sub_field('heading');
 
 if( have_rows('column_row') ): ?>
-<section class="column-grid <?php echo $section_class; ?>">
+<section class="column-grid container <?php echo $section_class; ?>">
 	
 	<?php if( $heading ): ?>
 		<header>
@@ -43,15 +43,23 @@ if( have_rows('column_row') ): ?>
 	
 			?>
 		<article class="block col-xs-12 col-md" style="background: url(<?php echo $image['url']; ?>) no-repeat center center">
+			<?php if(!empty($image)) { ?>
 			<img src="<?php echo $image['url']; ?>" />
+			<?php } ?>
+			<?php if(!empty($title)) { ?>
 			<header>
 				<h2><?php echo $title; ?></h2>
 				<span class="header"><?php echo $header; ?></span>
 				<span class="subheader"><?php echo $subheader; ?></span>
 			</header>
+			<?php } ?>
 			<div>
-				<p><?php echo $text; ?></p>
+			<?php if(!empty($text)) { ?>
+				<?php echo $text; ?>
+			<?php } ?>
+			<?php if(!empty($cta)) { ?>
 				<a class="button" href="<?php echo $link; ?>"><?php echo $cta; ?></a>
+		    <?php } ?>
 			</div>
 		</article>
 		<?php endwhile; ?>

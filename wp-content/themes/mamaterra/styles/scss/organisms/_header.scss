@@ -232,7 +232,7 @@ header#masthead {
 
 //Add padding to content element 
 
-#primary {
+.content-area{
     @include bp(viewport_m){
         padding-top:$mobile-height;
     }
@@ -248,18 +248,23 @@ body.scrolled {
 	header#masthead {
 	     background-color: rgba(255,255,255,1);
          transition: background-color .5s;
+         .show-menu svg {
+	         margin-top: 14px;
+         }          
 		.site-branding .site-title {
 		    margin:3px 0;
 		    transition: margin .5s;
 		    img { max-height: 44px; transition: max-height .5s;}
 		 }
 		
-		.menu-main-menu-container ul li {
-		    height: 50px;
-		    a { height: 50px;}
-		    &:hover ul.sub-menu {
-			    top:100%;
-            }
+		.menu-main-menu-container ul li { 
+		    @include bp(viewport_l){
+			    height: 50px;
+			    a { height: 50px;}
+			    &:hover ul.sub-menu {
+				    top:100%;
+	            }
+	        }
 		}
 	}
 }

@@ -6,9 +6,9 @@ a, a:visited {
     transition:all .35s;
     &:hover, &.hover{
         text-decoration: underline;
-        color: $black;
+        color: $purple;
     }
-    &.underline, p.a{
+    &.underline, .entry-content.a{
         border-bottom: 2px solid $pop;
         color: $text;
         &:hover, &.hover{
