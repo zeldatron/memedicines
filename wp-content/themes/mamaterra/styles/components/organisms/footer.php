@@ -44,6 +44,14 @@ $address = explode(',', $location['address']);
 </section>
 
 <?php } ?>
+<?php if ( is_front_page() ) : ?>
+<section class="no-padding ig-bar">
+<p class="lg wt700 center-text center lt-tan-txt"><i class="fa fa-instagram"></i> Follow us on Instagram <a href="https://www.instagram.com/motherearthmedicines/" target="_blank">@motherearthmedicines</a></p>
+    
+	<?php echo do_shortcode('[instagram-feed]'); ?>   
+</section>
+
+<?php endif; ?>	    
 
 <footer id="colophon" class="site-footer">
 		<div class="site-info">

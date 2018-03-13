@@ -1638,7 +1638,7 @@ a.read-more {
   right: 0;
   bottom: 0;
   z-index: 2;
-  opacity: .5; }
+  opacity: .3; }
 
 .clear:after {
   content: "";
@@ -2135,7 +2135,7 @@ footer#colophon {
 /* scss/organisms/_header.scss */
 header#masthead {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.92);
   width: 100%;
   padding: 0 3vw;
   z-index: 99;
@@ -2459,8 +2459,8 @@ body.admin-bar header#masthead {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    -webkit-filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.4));
-    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.4)); }
+    -webkit-filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.6)); }
     @media only screen and (min-width: 750px) {
       .home .splash-overlay img {
         min-height: 300px;
@@ -2498,6 +2498,17 @@ body.admin-bar header#masthead {
   margin: 2em auto 0; }
   .home .home-news .listing-item {
     background: #F3F7E7; }
+
+.ig-bar {
+  background-color: #6A675C; }
+  .ig-bar p {
+    margin: 20px auto 15px; }
+    .ig-bar p a {
+      color: white; }
+      .ig-bar p a:hover {
+        color: #2F2D30; }
+  .ig-bar #sb_instagram {
+    padding-bottom: 0 !important; }
 
 /* scss/scripts/_equalheightelements.scss */
 .equalheightcontainer article {
