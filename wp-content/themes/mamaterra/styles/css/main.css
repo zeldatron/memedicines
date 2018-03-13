@@ -1612,6 +1612,11 @@ a.read-more {
 .blog main, .single-post main {
   padding-right: 2em; }
 
+.m-icon {
+  width: 120px;
+  margin: 0 auto;
+  display: block; }
+
 /* scss/atoms/_general-helpers.scss */
 .center {
   margin-left: auto;

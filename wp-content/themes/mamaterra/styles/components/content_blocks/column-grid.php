@@ -7,11 +7,8 @@
 			$seamless = 'seamless';
 		endif;
 
-		if( get_sub_field('section_class') ):
-			$section_class = get_sub_field('section_class'); 
-			if( get_sub_field('section_id') ):
-				$section_class = 'id="'.$section_class;
-			endif;
+		if( get_sub_field('cg_section_class') ):
+			$section_class = get_sub_field('cg_section_class'); 
 		endif;
 		
 	$heading = get_sub_field('heading');
