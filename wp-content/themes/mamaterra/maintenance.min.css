@@ -1,0 +1,44 @@
+
+html {
+	background: #2F2D30;
+}
+body {
+	background: #2F2D30;
+	color: #9B8F6D;
+	font-family: "museo-sans", sans-serif;
+	margin: 0 auto;
+	box-shadow:none;
+}
+h1 {
+	border-bottom: none;
+	clear: both;
+	font-size: 36px;
+	margin: 3em 0 0 0;
+	padding:0;
+	text-align:center;
+	color: #D0C8B7;
+	font-weight:100;
+	text-transform:uppercase;
+}
+
+img {
+	display:block;
+	max-height: 65vh;
+	min-height: 200px;
+	margin: 0 auto;
+	width:auto;
+}
+#error-page {
+	margin-top: 10px;
+}
+#error-page p {
+	margin: 14px 0;
+	color: #9B8F6D;
+	text-align:center;
+}
+
+a {
+	color: #9B8F6D;
+}
+
+a:hover{color:#78C155}
