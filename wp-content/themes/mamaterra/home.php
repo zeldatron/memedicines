@@ -8,40 +8,43 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area container">
+<div class="content-area">
+	<?php
+    if ( have_posts() ) :
+
+	    if ( is_home() && ! is_front_page() ) : ?>
+			
+		<header class="entry-header gradient-green">
+	        <h1 class="entry-title"><?php single_post_title(); ?></h1>
+		</header>			
 		<?php
-		if ( have_posts() ) :
+		endif;
+		?>
+		<section class="container row">	
+            <main class="col-xs-12 col-md-8 col-lg-9">
+		<?php
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title"><?php single_post_title(); ?></h1>
-				</header>
+		while ( have_posts() ) : the_post();
+        
+				get_template_part( 'template-parts/content-listing', get_post_format() );
+        
 
-			<?php
-			endif;
+		endwhile;
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+		
+		the_posts_navigation();
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+	else :
 
-			endwhile;
+		get_template_part( 'template-parts/content', 'none' );
 
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-	</div><!-- #primary -->
+	endif; ?>
+	         </main>
+	         <aside class="col-xs-12 col-md-4 col-lg-3">
+		         <?php get_sidebar(); ?>
+	         </aside>
+	    </section>
+</div>
 
 <?php
-get_sidebar();
 get_footer();

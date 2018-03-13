@@ -11,27 +11,26 @@ get_header(); ?>
 
 <div class="content-area">
 	<?php while ( have_posts() ) : the_post(); ?>
-	<header class="entry-header">
-	    <div class="container row">
+	<header class="entry-header gradient-green">
+	
+	    <div class="container row no-image"><!-- NO IMAGE HEADER -->
 	        <div class="col-xs-12">
-				<?php
-				if ( is_singular() ) :
-					the_title( '<h1 class="entry-title">', '</h1>' );
-				else :
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				endif;
-		
-				if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<?php mamaterra_posted_on(); ?>
-				</div><!-- .entry-meta -->
-				<?php endif; ?>	
-				</div>	
-			</div>
+			<?php
+			if ( is_singular() ) :
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			else :
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			endif;
+			
+			if ( 'post' === get_post_type() ) : ?>
+			    <small><?php the_date(); ?> |  By <?php the_author(); ?> </small>
+			
+			<?php endif; ?>	
+			</div>	
 	</header><!-- .entry-header -->
     
-    <main id="main" <?php post_class('site-main container row'); ?>>
-        <div class="col-xs-12 col-md-8 col-lg-9" id="primary">
+    <section <?php post_class('container row'); ?>>
+        <main id="main" class="col-xs-12 col-md-8 col-lg-9">
 	
 			<?php
 	
@@ -46,11 +45,11 @@ get_header(); ?>
 	
 			endwhile; // End of the loop.
 			?>
-		</div>
-        <div class="col-xs-12 col-md-4 col-lg-3" id="secondary">
+		</main>
+        <aside class="col-xs-12 col-md-4 col-lg-3" id="secondary">
            <?php get_sidebar(); ?>
-        </div>
-    </main><!-- #post-<?php the_ID(); ?> -->
+        </aside>
+    </section><!-- #post-<?php the_ID(); ?> -->
 </div><!-- #primary -->
 <?php
 get_footer();

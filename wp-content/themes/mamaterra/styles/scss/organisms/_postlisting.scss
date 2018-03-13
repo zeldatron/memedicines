@@ -1,0 +1,46 @@
+/* scss/organisms/_postlisting.scss */
+
+.listing-item {
+margin-bottom: 2em;
+
+@include bp(viewport_m){
+   display:flex;
+}
+    a.image {
+        display:block;
+        width:100%;
+        @include bp(viewport_m){
+           width:50%;
+        }
+        img {
+           width:100%;
+           height:auto;
+           display:block;
+	    }
+	}
+	> div {
+	   padding:4%;
+       @include bp(viewport_m){
+           width:50%;
+          
+       }
+		a.title {
+			display:block;
+			font-size: 3.2rem;
+			font-weight:300;
+			margin-bottom:1rem;
+            @include bp(viewport_m){
+			    font-size: 3.6rem;
+			    font-weight:100;
+			}
+			line-height:1.2;
+			color: $dk-brown;
+			&:hover {
+				text-decoration:none;
+				color:$green;
+			}
+		}
+	}
+	&.no-image > div { width:100%;}
+
+}

@@ -308,10 +308,12 @@ h2 {
   font-size: 4.2rem; }
 
 h3, .subheader {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  padding-top: .5em; }
 
 h4 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  padding-top: .5em; }
 
 p {
   margin: 1em 0;
@@ -1527,31 +1529,64 @@ a.read-more {
     left: 4px;
     transition: left .25s; }
 
+.nav-links {
+  margin: 2em 0;
+  padding: .5em 1em;
+  background: #F7F6F4;
+  display: flex; }
+  .nav-links > div {
+    width: 50%; }
+    .nav-links > div.nav-next {
+      text-align: right; }
+      .nav-links > div.nav-next a::after {
+        content: '\f061';
+        font-family: 'fontawesome';
+        font-size: 1.2rem;
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        left: 4px; }
+    .nav-links > div.nav-previous a::before {
+      content: '\f060';
+      font-family: 'fontawesome';
+      font-size: 1.2rem;
+      display: inline-block;
+      position: relative;
+      top: -2px;
+      right: 4px; }
+    .nav-links > div a {
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+      .nav-links > div a:hover {
+        text-decoration: none; }
+
 /* scss/atoms/_foundation.scss */
-.content-area > main > section {
+.content-area main > section {
   padding-top: 1.8em;
   padding-bottom: 1.8em; }
   @media only screen and (min-width: 750px) {
-    .content-area > main > section {
+    .content-area main > section {
       padding-top: 3.2em;
       padding-bottom: 3.2em; } }
   @media only screen and (min-width: 1000px) {
-    .content-area > main > section {
+    .content-area main > section {
       padding-top: 4em;
       padding-bottom: 4em; } }
-  .content-area > main > section.no-padding {
+  .content-area main > section.no-padding {
     padding-top: 0;
     padding-bottom: 0; }
-  .content-area > main > section.full-width .container {
+  .content-area main > section.full-width .container {
     max-width: 1000000px !important;
     padding-left: 0;
     padding-right: 0; }
-  .content-area > main > section header > h1 {
+  .content-area main > section header > h1 {
     text-align: center; }
 
-.content-area > main > header.entry-header {
+.content-area > header.entry-header {
   text-align: center;
-  padding: 2em 1em; }
+  padding: 2em 1em;
+  margin-bottom: 3em; }
 
 .container {
   width: 100%;
@@ -1563,11 +1598,19 @@ a.read-more {
       padding: 0 30px; } }
 
 .single-post header.entry-header {
-  padding: 4em 0 2em 0; }
+  text-align: left;
+  margin-bottom: 3em; }
+  .single-post header.entry-header small {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 10px; }
 
 .single-post .entry-content {
   padding-right: 5%;
-  max-width: 900px; }
+  max-width: 860px; }
+
+.blog main, .single-post main {
+  padding-right: 2em; }
 
 /* scss/atoms/_general-helpers.scss */
 .center {
@@ -1642,6 +1685,17 @@ ul {
   background: -webkit-linear-gradient(top, rgba(37, 70, 4, 0.8) 0%, #100e10 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(37, 70, 4, 0.8) 0%, #100e10 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+
+.gradient-aqua {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b8db7e+0,46b095+0,a1dba0+24,a1dba0+76,a1dba0+76,46b095+100,b8db7e+100,b8db7e+100,46b095+100 */
+  background: #b8db7e;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #b8db7e 0%, #46b095 0%, #a1dba0 24%, #a1dba0 76%, #a1dba0 76%, #46b095 100%, #b8db7e 100%, #b8db7e 100%, #46b095 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #b8db7e 0%, #46b095 0%, #a1dba0 24%, #a1dba0 76%, #a1dba0 76%, #46b095 100%, #b8db7e 100%, #b8db7e 100%, #46b095 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #b8db7e 0%, #46b095 0%, #a1dba0 24%, #a1dba0 76%, #a1dba0 76%, #46b095 100%, #b8db7e 100%, #b8db7e 100%, #46b095 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
 
 /* scss/molecules/_accordion.scss */
@@ -1955,6 +2009,11 @@ button.pop-it-up {
 #modal-container .component .source {
   position: relative;
   min-height: 300px; }
+
+/* scss/molecules/_FormElements.scss */
+textarea, input[type="text"], input[type="email"], select {
+  padding: 6px 10px;
+  background: #F7F6F4; }
 
 /* scss/organisms/_sidebar.scss */
 .widget {
@@ -2280,6 +2339,44 @@ body.admin-bar header#masthead {
     position: relative;
     border: 1px solid #ccc; }
 
+/* scss/organisms/_postlisting.scss */
+.listing-item {
+  margin-bottom: 2em; }
+  @media only screen and (min-width: 750px) {
+    .listing-item {
+      display: flex; } }
+  .listing-item a.image {
+    display: block;
+    width: 100%; }
+    @media only screen and (min-width: 750px) {
+      .listing-item a.image {
+        width: 50%; } }
+    .listing-item a.image img {
+      width: 100%;
+      height: auto;
+      display: block; }
+  .listing-item > div {
+    padding: 4%; }
+    @media only screen and (min-width: 750px) {
+      .listing-item > div {
+        width: 50%; } }
+    .listing-item > div a.title {
+      display: block;
+      font-size: 3.2rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      color: #4C4532; }
+      @media only screen and (min-width: 750px) {
+        .listing-item > div a.title {
+          font-size: 3.6rem;
+          font-weight: 100; } }
+      .listing-item > div a.title:hover {
+        text-decoration: none;
+        color: #77B43D; }
+  .listing-item.no-image > div {
+    width: 100%; }
+
 /* scss/pages/_landing_pages.scss */
 .page-template-page-template-landing .hero.header {
   min-height: 475px; }
@@ -2391,39 +2488,11 @@ body.admin-bar header#masthead {
     .home .scroll-down {
       display: block; } }
 
-.home .home-news .listing-item {
-  margin-top: 2em; }
-  @media only screen and (min-width: 750px) {
-    .home .home-news .listing-item {
-      display: flex; } }
-  .home .home-news .listing-item a.image {
-    display: block;
-    width: 100%; }
-    @media only screen and (min-width: 750px) {
-      .home .home-news .listing-item a.image {
-        width: 50%; } }
-    .home .home-news .listing-item a.image img {
-      width: 100%;
-      height: auto; }
-  .home .home-news .listing-item > div {
-    padding: 4%; }
-    @media only screen and (min-width: 750px) {
-      .home .home-news .listing-item > div {
-        width: 50%; } }
-    .home .home-news .listing-item > div a.title {
-      display: block;
-      font-size: 3.2rem;
-      font-weight: 300;
-      margin-bottom: 1rem;
-      line-height: 1.2;
-      color: #4C4532; }
-      @media only screen and (min-width: 750px) {
-        .home .home-news .listing-item > div a.title {
-          font-size: 3.6rem;
-          font-weight: 100; } }
-      .home .home-news .listing-item > div a.title:hover {
-        text-decoration: none;
-        color: #77B43D; }
+.home .home-news {
+  max-width: 900px;
+  margin: 2em auto 0; }
+  .home .home-news .listing-item {
+    background: #F3F7E7; }
 
 /* scss/scripts/_equalheightelements.scss */
 .equalheightcontainer article {

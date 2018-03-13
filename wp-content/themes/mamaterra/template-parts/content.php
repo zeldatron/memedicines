@@ -31,7 +31,3 @@
 		) );
 	?>
 </div><!-- .entry-content -->
-
-<footer class="entry-footer">
-	<?php mamaterra_entry_footer(); ?>
-</footer><!-- .entry-footer -->

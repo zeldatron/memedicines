@@ -8,7 +8,6 @@
  */
 
 ?>
-<main id="main" <?php post_class('site-main'); ?>>
 
 <?php
 	if(!get_field('no_header')):
@@ -26,6 +25,7 @@
 <?php
 	endif;
 ?>
+<main id="main" <?php post_class('site-main'); ?>>
 
 <?php
 	if(get_field('page_blocks')):
@@ -34,5 +34,4 @@
 		echo get_field('default_content');
 	endif;
 ?>
-
 </main><!-- #post-<?php the_ID(); ?> -->

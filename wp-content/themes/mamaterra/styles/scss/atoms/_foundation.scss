@@ -1,7 +1,7 @@
 /* scss/atoms/_foundation.scss */
 
-.content-area > main {
-	> section {
+.content-area {
+	main > section {
         padding-top: 1.8em;
         padding-bottom:1.8em; 
         @include bp(viewport_m){
@@ -31,6 +31,8 @@
 	> header.entry-header {
 	    text-align:center;
 	    padding:2em 1em;
+	    margin-bottom:3em;
+
 	}
 }
 
@@ -46,11 +48,21 @@
 
 .single-post { 
     header.entry-header {
-	    padding: 4em 0 2em 0;
+	    text-align:left;
+	    margin-bottom:3em;
+	    small {
+		    display:block;
+		    text-transform:uppercase;
+		    margin-top:10px;
+	    }
     } 
     
     .entry-content {
 	    padding-right:5%;
-	    max-width:900px;
-    }  
+	    max-width:860px;
+    } 
+}
+
+.blog main, .single-post main{
+	padding-right:2em;
 }

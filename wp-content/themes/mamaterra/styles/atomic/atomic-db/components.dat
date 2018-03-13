@@ -366,5 +366,21 @@
         "backgroundColor": "",
         "order": -44,
         "has_js": "true"
+    },
+    {
+        "component": "FormElements",
+        "category": "molecules",
+        "description": "",
+        "backgroundColor": "",
+        "order": -45,
+        "has_js": "false"
+    },
+    {
+        "component": "postlisting",
+        "category": "organisms",
+        "description": "How post appears on blog landing &amp; category pages, and on home page",
+        "backgroundColor": "",
+        "order": -46,
+        "has_js": "false"
     }
 ]
